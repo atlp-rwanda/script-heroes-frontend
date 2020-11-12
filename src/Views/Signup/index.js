@@ -1,10 +1,10 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import SignupForm from "../../components/SignupForm";
-import SignupImage from "../../components/SignupImage";
-import { signupAction, errorSetting } from "../../../redux/actions";
-import Navigation from "../../components/Navigation";
-import Footer from "../../components/Footer";
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import SignupForm from '../../components/SignupForm';
+import SignupImage from '../../components/SignupImage';
+import { signupAction, errorSetting } from '../../../redux/actions';
+import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
 
 const Signup = () => {
   const dispatch = useDispatch();
@@ -21,8 +21,7 @@ const Signup = () => {
   };
   return (
     <React.Fragment>
-      <Navigation />
-      <div className="signup">
+      <div className='signup'>
         <SignupForm
           errorSetting={dispatchError}
           signupAction={dispatchResponse}
@@ -32,7 +31,6 @@ const Signup = () => {
         />
         <SignupImage />
       </div>
-      <Footer />
     </React.Fragment>
   );
 };

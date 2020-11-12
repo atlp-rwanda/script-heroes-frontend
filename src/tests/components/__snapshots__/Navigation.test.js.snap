@@ -178,6 +178,16 @@ exports[`Footer Should match snapshot 1`] = `
         >
           <Link
             className="nav-link text-warning ml-4"
+            to="/profile"
+          >
+            Profile
+          </Link>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <Link
+            className="nav-link text-warning ml-4"
             to="/"
           >
             <button

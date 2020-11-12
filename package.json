@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start": "serve -s ./build",
     "dev": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "test": "jest --coverage",
+    "test": "jest --coverage -u",
     "storybook": "start-storybook -p 6006 --no-dll",
     "build-storybook": "build-storybook --no-dll",
-    "start": "serve -s ./build",
     "heroku-postbuild": "yarn run build"
   },
   "keywords": [],
@@ -27,7 +27,7 @@
     "bootstrap": "^4.5.3",
     "coveralls": "^3.1.0",
     "css-loader": "^5.0.1",
-    "dotenv-webpack": "^5.1.0",
+    "dotenv-webpack": "^6.0.0",
     "error-overlay-webpack-plugin": "^0.4.1",
     "eslint-loader": "^4.0.2",
     "global": "^4.4.0",

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfileImage/> Should render profile image 1`] = `
+<img
+  alt="profile-image"
+  className="col-md-6"
+  src="test-file-stub"
+/>
+`;

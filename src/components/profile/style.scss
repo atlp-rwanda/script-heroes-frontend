@@ -1,0 +1,37 @@
+.text-color {
+  color: #728191;
+}
+.none {
+  text-decoration: underline;
+}
+.background {
+  background: #fbfbfc;
+  padding: 1rem;
+}
+.height {
+  min-height: 80vh;
+}
+.margin-bottom {
+  margin-bottom: 3rem;
+}
+.background-form {
+  background: #e9ecef;
+  border-radius: 0.5em;
+}
+.btn-save {
+  background: #fec573;
+  color: #728191;
+  border: 0;
+}
+.btn-save:hover {
+  background: #fec573;
+  color: #728191;
+  border: 0;
+}
+.border-error {
+  border: 1px solid #d9534f;
+}
+.back-error {
+  background: #e9ecef;
+  border: none;
+}

@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ViewProfile/> Should render with no errors 1`] = `
+<View>
+  <div
+    className="background clearfix mt-5 height"
+  >
+    <h1
+      className="text-center text-color mb-5"
+    >
+      Profile Information
+    </h1>
+    <Row
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <div
+        className="row"
+      >
+        <Col
+          md="6"
+          tag="div"
+          widths={
+            Array [
+              "xs",
+              "sm",
+              "md",
+              "lg",
+              "xl",
+            ]
+          }
+        >
+          <div
+            className="col-md-6"
+          >
+            <Table
+              borderless={true}
+              responsiveTag="div"
+              tag="table"
+            >
+              <table
+                className="table table-borderless"
+              >
+                <thead>
+                  <tr>
+                    <td
+                      className="text-color"
+                    >
+                      <i
+                        className="fas fa-user mr-3 text-color"
+                      />
+                      FIRST NAME:
+                    </td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td
+                      className="text-color"
+                    >
+                      <i
+                        className="fas fa-user mr-3 text-color"
+                      />
+                      LAST NAME:
+                    </td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td
+                      className="text-color"
+                    >
+                      <i
+                        className="fas fa-envelope mr-3 text-color"
+                      />
+                      EMAIL:
+                    </td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td
+                      className="text-color"
+                    >
+                      <i
+                        className="fas fa-transgender mr-3 text-color"
+                      />
+                      GENDER:
+                    </td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td
+                      className="text-color"
+                    >
+                      <i
+                        className="fas fa-calendar-day mr-3 text-color"
+                      />
+                      DATE OF BIRTH:
+                    </td>
+                    <td>
+                      Invalid Date
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      className="text-color"
+                    >
+                      <i
+                        className="fas fa-phone-alt mr-3 text-color"
+                      />
+                      PHONE NUMBER:
+                    </td>
+                    <td />
+                  </tr>
+                </thead>
+              </table>
+            </Table>
+          </div>
+        </Col>
+        <Col
+          md="6"
+          tag="div"
+          widths={
+            Array [
+              "xs",
+              "sm",
+              "md",
+              "lg",
+              "xl",
+            ]
+          }
+        >
+          <div
+            className="col-md-6"
+          >
+            <Table
+              borderless={true}
+              responsiveTag="div"
+              tag="table"
+            >
+              <table
+                className="table table-borderless"
+              >
+                <thead>
+                  <tr>
+                    <td
+                      className="text-color"
+                    >
+                      <i
+                        className="fas fa-flag mr-3 text-color"
+                      />
+                      COUNTRY OF RESIDENCE:
+                    </td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td
+                      className="text-color"
+                    >
+                      <i
+                        className="fas fa-coins mr-3 text-color"
+                      />
+                      CURRENCY:
+                    </td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td
+                      className="text-color"
+                    >
+                      <i
+                        className="fas fa-language mr-3 text-color"
+                      />
+                      LANGUAGE:
+                    </td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td
+                      className="text-color"
+                    >
+                      <i
+                        className="fas fa-building mr-3 text-color"
+                      />
+                      DEPARTMENT:
+                    </td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td
+                      className="text-color"
+                    >
+                      <i
+                        className="fas fa-user-edit mr-3 text-color"
+                      />
+                      LINE MANAGER:
+                    </td>
+                    <td />
+                  </tr>
+                </thead>
+              </table>
+            </Table>
+          </div>
+        </Col>
+      </div>
+    </Row>
+    <a
+      className="float-right text-color none m-1"
+      href="/profile/complete/undefined"
+    >
+      <strong>
+         COMPLETE 
+      </strong>
+    </a>
+  </div>
+</View>
+`;
