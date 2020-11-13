@@ -1,0 +1,510 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login page Should render with no errors 1`] = `
+<Login>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Container
+        className="container-login"
+        tag="div"
+      >
+        <div
+          className="container-login container"
+        >
+          <Row
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            <div
+              className="row"
+            >
+              <Col
+                md="6"
+                tag="div"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                <div
+                  className="col-md-6"
+                >
+                  <h2>
+                    Make Your Tour Amazing With Us
+                  </h2>
+                  <img
+                    alt="Login Image"
+                    className="login_image"
+                    src="test-file-stub"
+                  />
+                </div>
+              </Col>
+              <Col
+                className="login"
+                md="6"
+                tag="div"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                <div
+                  className="login col-md-6"
+                >
+                  <h2
+                    className="sub_title"
+                  >
+                    Sign In
+                  </h2>
+                  <Form
+                    onSubmit={[Function]}
+                    tag="form"
+                  >
+                    <form
+                      className=""
+                      onSubmit={[Function]}
+                    >
+                      <FormGroup
+                        tag="div"
+                      >
+                        <div
+                          className="form-group"
+                        >
+                          <Label
+                            htmlFor="exampleInputEmail1"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            <label
+                              className=""
+                              htmlFor="exampleInputEmail1"
+                            >
+                              Email
+                            </label>
+                          </Label>
+                          <Input
+                            id="exampleEmail"
+                            name="email"
+                            onChange={[Function]}
+                            placeholder="example@email.com"
+                            required={true}
+                            type="email"
+                            value=""
+                          >
+                            <input
+                              className="form-control"
+                              id="exampleEmail"
+                              name="email"
+                              onChange={[Function]}
+                              placeholder="example@email.com"
+                              required={true}
+                              type="email"
+                              value=""
+                            />
+                          </Input>
+                        </div>
+                      </FormGroup>
+                      <FormGroup
+                        tag="div"
+                      >
+                        <div
+                          className="form-group"
+                        >
+                          <Label
+                            htmlFor="exampleInputPassword1"
+                            tag="label"
+                            widths={
+                              Array [
+                                "xs",
+                                "sm",
+                                "md",
+                                "lg",
+                                "xl",
+                              ]
+                            }
+                          >
+                            <label
+                              className=""
+                              htmlFor="exampleInputPassword1"
+                            >
+                              Password
+                            </label>
+                          </Label>
+                          <Input
+                            id="password"
+                            name="password"
+                            onChange={[Function]}
+                            placeholder="Password"
+                            required={true}
+                            type="password"
+                            value=""
+                          >
+                            <input
+                              className="form-control"
+                              id="password"
+                              name="password"
+                              onChange={[Function]}
+                              placeholder="Password"
+                              required={true}
+                              type="password"
+                              value=""
+                            />
+                          </Input>
+                        </div>
+                      </FormGroup>
+                      <Col
+                        md={6}
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <div
+                          className="col-md-6"
+                        >
+                          <Link
+                            to="./forgot-password"
+                          >
+                            <LinkAnchor
+                              href="/forgot-password"
+                              navigate={[Function]}
+                            >
+                              <a
+                                href="/forgot-password"
+                                onClick={[Function]}
+                              >
+                                Forgot Password
+                              </a>
+                            </LinkAnchor>
+                          </Link>
+                        </div>
+                      </Col>
+                      <center>
+                        <div
+                          className="response"
+                        >
+                          <Alert
+                            closeAriaLabel="Close"
+                            color=""
+                            fade={true}
+                            isOpen={false}
+                            tag="div"
+                            transition={
+                              Object {
+                                "appear": true,
+                                "baseClass": "fade",
+                                "baseClassActive": "show",
+                                "enter": true,
+                                "exit": true,
+                                "in": true,
+                                "mountOnEnter": false,
+                                "onEnter": [Function],
+                                "onEntered": [Function],
+                                "onEntering": [Function],
+                                "onExit": [Function],
+                                "onExited": [Function],
+                                "onExiting": [Function],
+                                "tag": "div",
+                                "timeout": 150,
+                                "unmountOnExit": true,
+                              }
+                            }
+                          >
+                            <Fade
+                              appear={true}
+                              baseClass="fade"
+                              baseClassActive="show"
+                              className="alert alert-"
+                              enter={true}
+                              exit={true}
+                              in={false}
+                              mountOnEnter={false}
+                              onEnter={[Function]}
+                              onEntered={[Function]}
+                              onEntering={[Function]}
+                              onExit={[Function]}
+                              onExited={[Function]}
+                              onExiting={[Function]}
+                              role="alert"
+                              tag="div"
+                              timeout={150}
+                              unmountOnExit={true}
+                            >
+                              <Transition
+                                appear={true}
+                                enter={true}
+                                exit={true}
+                                in={false}
+                                mountOnEnter={false}
+                                onEnter={[Function]}
+                                onEntered={[Function]}
+                                onEntering={[Function]}
+                                onExit={[Function]}
+                                onExited={[Function]}
+                                onExiting={[Function]}
+                                timeout={150}
+                                unmountOnExit={true}
+                              />
+                            </Fade>
+                          </Alert>
+                        </div>
+                        <Button
+                          color="secondary"
+                          tag="button"
+                          type="submit"
+                        >
+                          <button
+                            aria-label={null}
+                            className="btn btn-secondary"
+                            onClick={[Function]}
+                            type="submit"
+                          >
+                            Sign in
+                          </button>
+                        </Button>
+                      </center>
+                    </form>
+                  </Form>
+                  <center>
+                    <div
+                      className="form_part"
+                    >
+                      <button>
+                        Sign in With Facebook
+                      </button>
+                      <button>
+                        Sign in With Google
+                      </button>
+                    </div>
+                  </center>
+                  <Col
+                    md={10}
+                    tag="div"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    <div
+                      className="col-md-10"
+                    >
+                      Dont have an account yet ? 
+                      <Link
+                        to="/signup"
+                      >
+                        <LinkAnchor
+                          href="/signup"
+                          navigate={[Function]}
+                        >
+                          <a
+                            href="/signup"
+                            onClick={[Function]}
+                          >
+                            Register
+                          </a>
+                        </LinkAnchor>
+                      </Link>
+                    </div>
+                  </Col>
+                </div>
+              </Col>
+            </div>
+          </Row>
+        </div>
+      </Container>
+      <Footer>
+        <Container
+          className="footer"
+          fluid={true}
+          tag="div"
+        >
+          <div
+            className="footer container-fluid"
+          >
+            <Row
+              className="just-foot"
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+            >
+              <div
+                className="just-foot row"
+              >
+                <Row
+                  className="social-links"
+                  tag="div"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  <div
+                    className="social-links row"
+                  >
+                    <Col
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <div
+                        className="col"
+                      >
+                        <a
+                          href="https://www.facebook.com/"
+                          target="_blank"
+                        >
+                          <img
+                            src="test-file-stub"
+                          />
+                        </a>
+                        <a
+                          href="http://instagram.com/"
+                          target="_blank"
+                        >
+                          <img
+                            src="test-file-stub"
+                          />
+                        </a>
+                        <a
+                          href="http://linkedin.com/"
+                          target="_blank"
+                        >
+                          <img
+                            src="test-file-stub"
+                          />
+                        </a>
+                        <a
+                          href="https://twitter.com/"
+                          target="_blank"
+                        >
+                          <img
+                            src="test-file-stub"
+                          />
+                        </a>
+                      </div>
+                    </Col>
+                  </div>
+                </Row>
+                <Row
+                  tag="div"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  <div
+                    className="row"
+                  >
+                    <Col
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <div
+                        className="col"
+                      >
+                        <p>
+                          © 2020 Barefoot Nomad
+                        </p>
+                      </div>
+                    </Col>
+                  </div>
+                </Row>
+              </div>
+            </Row>
+          </div>
+        </Container>
+      </Footer>
+    </Router>
+  </BrowserRouter>
+</Login>
+`;

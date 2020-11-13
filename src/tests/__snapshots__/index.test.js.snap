@@ -193,7 +193,7 @@ exports[`App snapshot renders 1`] = `
     className="container"
   >
     <div
-      className="container"
+      className="home-container container"
     >
       <div
         className="home-flex d-flex row"
