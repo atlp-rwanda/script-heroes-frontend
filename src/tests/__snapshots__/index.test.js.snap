@@ -60,7 +60,7 @@ exports[`App snapshot renders 1`] = `
         <img
           alt="logo"
           className="logo"
-          src=""
+          src="test-file-stub"
         />
       </a>
       <button
@@ -126,7 +126,7 @@ exports[`App snapshot renders 1`] = `
           >
             <a
               className="nav-link text-warning ml-4"
-              href="/"
+              href="/signup"
               onClick={[Function]}
             >
               Sign Up
@@ -207,7 +207,7 @@ exports[`App snapshot renders 1`] = `
         <img
           alt="Destination"
           className="destination"
-          src=""
+          src="test-file-stub"
         />
       </div>
     </div>
@@ -226,7 +226,7 @@ exports[`App snapshot renders 1`] = `
         onClick={[Function]}
       >
         <img
-          src=""
+          src="test-file-stub"
         />
       </button>
       <div
@@ -253,7 +253,7 @@ exports[`App snapshot renders 1`] = `
                 <img
                   alt="Hotel booking"
                   className="service-img"
-                  src=""
+                  src="test-file-stub"
                 />
                 <div
                   className="details"
@@ -277,7 +277,7 @@ exports[`App snapshot renders 1`] = `
                 <img
                   alt="Vacation booking"
                   className="service-img"
-                  src=""
+                  src="test-file-stub"
                 />
                 <div
                   className="details"
@@ -301,7 +301,7 @@ exports[`App snapshot renders 1`] = `
                 <img
                   alt="Flight booking"
                   className="service-img"
-                  src=""
+                  src="test-file-stub"
                 />
                 <div
                   className="details"
@@ -325,7 +325,7 @@ exports[`App snapshot renders 1`] = `
                 <img
                   alt="Travel Advisory"
                   className="service-img"
-                  src=""
+                  src="test-file-stub"
                 />
                 <div
                   className="details"
@@ -349,7 +349,7 @@ exports[`App snapshot renders 1`] = `
                 <img
                   alt="Travel Consultancy"
                   className="service-img"
-                  src=""
+                  src="test-file-stub"
                 />
                 <div
                   className="details"
@@ -373,7 +373,7 @@ exports[`App snapshot renders 1`] = `
                 <img
                   alt="Hotel booking"
                   className="service-img"
-                  src=""
+                  src="test-file-stub"
                 />
                 <div
                   className="details"
@@ -397,7 +397,7 @@ exports[`App snapshot renders 1`] = `
                 <img
                   alt="Vacation booking"
                   className="service-img"
-                  src=""
+                  src="test-file-stub"
                 />
                 <div
                   className="details"
@@ -421,7 +421,7 @@ exports[`App snapshot renders 1`] = `
                 <img
                   alt="Flight booking"
                   className="service-img"
-                  src=""
+                  src="test-file-stub"
                 />
                 <div
                   className="details"
@@ -445,7 +445,7 @@ exports[`App snapshot renders 1`] = `
                 <img
                   alt="Travel Advisory"
                   className="service-img"
-                  src=""
+                  src="test-file-stub"
                 />
                 <div
                   className="details"
@@ -469,7 +469,7 @@ exports[`App snapshot renders 1`] = `
                 <img
                   alt="Travel Consultancy"
                   className="service-img"
-                  src=""
+                  src="test-file-stub"
                 />
                 <div
                   className="details"
@@ -497,7 +497,7 @@ exports[`App snapshot renders 1`] = `
         onClick={[Function]}
       >
         <img
-          src=""
+          src="test-file-stub"
         />
       </button>
     </div>
@@ -519,7 +519,7 @@ exports[`App snapshot renders 1`] = `
             target="_blank"
           >
             <img
-              src=""
+              src="test-file-stub"
             />
           </a>
           <a
@@ -527,7 +527,7 @@ exports[`App snapshot renders 1`] = `
             target="_blank"
           >
             <img
-              src=""
+              src="test-file-stub"
             />
           </a>
           <a
@@ -535,7 +535,7 @@ exports[`App snapshot renders 1`] = `
             target="_blank"
           >
             <img
-              src=""
+              src="test-file-stub"
             />
           </a>
           <a
@@ -543,7 +543,7 @@ exports[`App snapshot renders 1`] = `
             target="_blank"
           >
             <img
-              src=""
+              src="test-file-stub"
             />
           </a>
         </div>

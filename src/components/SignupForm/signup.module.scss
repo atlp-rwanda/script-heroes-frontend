@@ -1,0 +1,35 @@
+.SignupForm {
+  background: #e9ecef;
+  border-radius: 12px;
+  padding: 30px;
+  width: 55%;
+  margin: 0px 20px;
+}
+
+.SignupForm p {
+  margin: 40px 0;
+}
+
+.Response {
+  height: 80px;
+  text-align: center;
+}
+.Link {
+  line-height: 50px;
+}
+.Response * {
+  text-align: center;
+}
+
+@media screen and (max-width: 766px) {
+  .SignupForm {
+    width: 90%;
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .SignupForm {
+    width: 99%;
+  }
+}

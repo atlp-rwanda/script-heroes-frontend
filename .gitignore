@@ -20,6 +20,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+debug.log*
 
 .coveralls.yml
 yarn.lock
+
+#environament variables
+.env

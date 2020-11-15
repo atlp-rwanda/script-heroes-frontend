@@ -1,60 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lancelot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-$btnBgColor:#957F7F;
-$headerColor: #728191;  
-$mainTextColor: #D4AC0D;
-$mainBgColor: #FBFCFC;
+$btnBgColor: #957f7f;
+$headerColor: #728191;
+$mainTextColor: #d4ac0d;
+$mainBgColor: #fbfcfc;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .app {
-    background-color:$mainBgColor;
-    font-family: 'Lato', sans-serif;
-    overflow: hidden;
-    min-height: 100vh;
-    position: relative;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  background-color: $mainBgColor;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+}
 
-  .title {
-    font-size: 40px;
-    margin-top: 4em;
-    z-index: 1;
-    background-color: $headerColor;
-  }
-.custom-nav{
+.title {
+  font-size: 40px;
+  margin-top: 4em;
+  z-index: 1;
+  background-color: $headerColor;
+}
+.custom-nav {
   background-color: $headerColor;
   font-size: 1em;
-  margin-left:-30px;
+  margin-left: -30px;
   margin-right: -20px;
-  .logo{
+  .logo {
     width: 70px;
   }
-  .search-input{
-    background-color: $headerColor;;
+  .search-input {
+    background-color: $headerColor;
     border: 0;
     border-bottom: 2px solid $mainTextColor;
     outline: none;
     color: $mainBgColor;
-    font-size: .9em;
+    font-size: 0.9em;
     padding-left: 5px;
     padding-bottom: -10px;
-    height: 2.5em;  
+    height: 2.5em;
     font-family: FontAwesome;
   }
-  ::placeholder{
+  ::placeholder {
     color: $mainTextColor;
     text-align: end;
     font-size: 1.5em;
   }
-  .navbar-brand{
+  .navbar-brand {
     margin-right: 4em;
   }
 }
-.book-btn, .start-btn{
+.book-btn,
+.start-btn {
   background-color: $btnBgColor;
   color: $mainBgColor;
   border: 0;
@@ -70,20 +71,20 @@ $mainBgColor: #FBFCFC;
   justify-content: flex-end;
 }
 
-.navigation-title{
+.navigation-title {
   display: grid;
   grid-template-columns: 60% 40%;
   list-style-type: none;
   align-items: center;
-  padding-top:.7em;
-  .nav-title{
+  padding-top: 0.7em;
+  .nav-title {
     font-family: "Lancelot", cursive;
   }
-  .center-ele{
+  .center-ele {
     text-align: right;
     margin-right: 2em;
   }
-  .lang-form{
+  .lang-form {
     background-color: $btnBgColor;
     color: $mainBgColor;
     font-weight: bolder;
@@ -92,32 +93,32 @@ $mainBgColor: #FBFCFC;
   }
 }
 
-.nav-title{
+.nav-title {
   text-align: right;
-  color: $mainTextColor
+  color: $mainTextColor;
 }
-.custom-navig{
+.custom-navig {
   list-style-type: none;
   background-color: blue;
 }
 
-.destination{
+.destination {
   width: 100%;
 }
-.pop-services{
+.pop-services {
   font-size: 25px;
   color: $mainTextColor;
   text-align: center;
   padding: 1.5em;
 }
-.home-intro-text{
+.home-intro-text {
   text-align: center;
   padding: 3em;
 }
-.home-intro-text p{
+.home-intro-text p {
   padding: 3em 0;
 }
-.start-btn:hover{
+.start-btn:hover {
   color: $mainBgColor;
   text-decoration: none;
 }
@@ -126,13 +127,13 @@ $mainBgColor: #FBFCFC;
   max-width: 300px;
   margin: 0 auto;
   &:after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 350px;
     outline: 2px solid $mainTextColor;
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
   }
 }
@@ -148,12 +149,14 @@ $mainBgColor: #FBFCFC;
     box-shadow: none;
     background-color: white;
     border-color: white;
-    transition: opacity 300ms linear, border-color 300ms linear, background-color 300ms linear,transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: opacity 300ms linear, border-color 300ms linear,
+      background-color 300ms linear,
+      transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
     .details {
       opacity: 0;
       transition: opacity 150ms linear;
       text-align: center;
-      .card-title{
+      .card-title {
         font-size: 2em;
       }
     }
@@ -162,126 +165,148 @@ $mainBgColor: #FBFCFC;
 
 $i: 0;
 @for $i from 0 through 10 {
-    .cards-slider.active-slide-#{$i} #card-#{$i} {
+  .cards-slider.active-slide-#{$i} #card-#{$i} {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+    .details {
       opacity: 1;
-      transform: scale(1);
-      background-color: #f3f3f3;
-      border-color: #f3f3f3;
-      .details {
-        opacity: 1;
-      }
     }
+  }
 }
 .custom-col {
   height: 264px;
   position: relative;
   &:before,
   &:after {
-      content: '';
-      display: block;
-      width: 50%;
-      height: 75%;
-      background: linear-gradient(to right, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 100%);
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 2;
+    content: "";
+    display: block;
+    width: 50%;
+    height: 75%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 15%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
   }
   &:after {
-      left: auto;
-      right: 0;
-      background: linear-gradient(to left, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 100%);
+    left: auto;
+    right: 0;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 1) 15%,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
 }
 
-.services{
-  display:grid;
+.services {
+  display: grid;
   grid-template-columns: 5% 90% 5%;
   margin-bottom: 10em;
 }
-.service-img{
+.service-img {
   max-width: 300px;
   height: 200px;
 }
 
-.service-btn{
+.service-btn {
   z-index: 1;
   outline: none;
   border: 1px solid $mainBgColor;
   background-color: $mainBgColor;
   align-self: end;
-  padding:-20px;
-  img{
+  padding: -20px;
+  img {
     width: 60px;
   }
 }
-.prev-btn{
+.prev-btn {
   margin-left: -70px;
 }
-@media(max-width:360px){
-  .services{
+@media (max-width: 360px) {
+  .services {
     margin-bottom: 13em;
   }
 }
-@media(max-width:320px){
-  .card-title{
+@media (max-width: 320px) {
+  .card-title {
     font-size: 1.6em !important;
   }
-  .details{
-    width:87%;
+  .details {
+    width: 87%;
   }
-  .service-img{
+  .service-img {
     height: 190px;
   }
 }
-@media(max-width:280px){
-  .card-title{
+@media (max-width: 280px) {
+  .card-title {
     font-size: 1.6em !important;
   }
-  .service-img{
+  .service-img {
     height: 160px;
   }
 }
 
-@media(max-width:978px){
-  .home-flex{
+@media (max-width: 978px) {
+  .home-flex {
     display: flex;
     flex-direction: column-reverse;
-    .destination{
+    .destination {
       align-self: center;
     }
   }
-  .prev-btn{
+  .prev-btn {
     margin-left: -10px;
   }
 }
-@media(max-width:440px){
-  .nav-title{
+@media (max-width: 440px) {
+  .nav-title {
     font-size: 1.7em;
   }
 }
-.footer{
-  margin-top: 10em;
+.footer {
+  margin-top: 3em;
   background-color: $headerColor;
   color: $mainTextColor;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  img{
+  img {
     width: 40px;
     padding: 0.5em;
   }
-  .copy{
+  .copy {
     background-color: $mainBgColor;
-
   }
-  .just-foot{
+  .just-foot {
     justify-content: space-between;
     padding: 0 1em;
   }
 }
 
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 3em;
+  width: 90%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
+    color: #f9a826;
+    font-size: 2rem;
+  }
 
-
-
-
+  h3 {
+    font-size: 1.3rem;
+    color: #f9a826;
+  }
+}

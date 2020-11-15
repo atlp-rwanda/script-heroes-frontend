@@ -85,7 +85,7 @@ exports[`Footer Should match snapshot 1`] = `
       <img
         alt="logo"
         className="logo"
-        src=""
+        src="test-file-stub"
       />
     </Link>
     <button
@@ -148,7 +148,7 @@ exports[`Footer Should match snapshot 1`] = `
         >
           <Link
             className="nav-link text-warning ml-4"
-            to="/"
+            to="/signup"
           >
             Sign Up
           </Link>
