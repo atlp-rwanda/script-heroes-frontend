@@ -9,5 +9,14 @@ exports[`App snapshot renders 1`] = `
   >
     Barefoot Nomad
   </h1>
+  <div
+    className="app"
+  >
+    <h1
+      className="title"
+    >
+      Home Page
+    </h1>
+  </div>
 </div>
 `;
