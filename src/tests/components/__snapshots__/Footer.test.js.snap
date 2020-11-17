@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Should match snapshot 1`] = `
+<div
+  className="footer-containter d-flex"
+>
+  <div
+    className="social"
+  >
+    <a
+      href="https://www.facebook.com/"
+      target="_blank"
+    >
+      <img
+        src=""
+      />
+    </a>
+    <a
+      href="http://instagram.com/"
+      target="_blank"
+    >
+      <img
+        src=""
+      />
+    </a>
+    <a
+      href="http://linkedin.com/"
+      target="_blank"
+    >
+      <img
+        src=""
+      />
+    </a>
+    <a
+      href="https://twitter.com/"
+      target="_blank"
+    >
+      <img
+        src=""
+      />
+    </a>
+  </div>
+  <p>
+    © 2020 Barefoot Nomad
+  </p>
+</div>
+`;

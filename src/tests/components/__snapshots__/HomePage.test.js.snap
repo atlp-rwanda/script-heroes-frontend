@@ -1,0 +1,779 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Get next and previous elements Should get the next and previous services 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <HomePage>
+      <Navigation>
+        <div>
+          <div
+            className="navigation-title"
+          >
+            <h1
+              className="nav-title text-warning"
+            >
+              barefoot NOMAD
+            </h1>
+            <ul
+              className="center-ele"
+            >
+              <form>
+                <select
+                  className="lang-form"
+                >
+                  <option
+                    value="english"
+                  >
+                    English
+                  </option>
+                  <option
+                    value="kinyarwanda"
+                  >
+                    Kinyarwanda
+                  </option>
+                  <option
+                    value="français"
+                  >
+                    Français
+                  </option>
+                </select>
+              </form>
+            </ul>
+          </div>
+          <nav
+            className="navbar navbar-expand-lg navbar-light custom-nav"
+          >
+            <Link
+              className="navbar-brand mr-5"
+              to="/"
+            >
+              <LinkAnchor
+                className="navbar-brand mr-5"
+                href="/"
+                navigate={[Function]}
+              >
+                <a
+                  className="navbar-brand mr-5"
+                  href="/"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt="logo"
+                    className="logo"
+                    src=""
+                  />
+                </a>
+              </LinkAnchor>
+            </Link>
+            <button
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              className="navbar-toggler"
+              data-target="#navbarSupportedContent"
+              data-toggle="collapse"
+              type="button"
+            >
+              <span
+                className="navbar-toggler-icon"
+              />
+            </button>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul
+                className="navbar-nav ml-5"
+              >
+                <li
+                  className="nav-item active"
+                >
+                  <Link
+                    className="nav-link text-warning ml-4"
+                    to="/"
+                  >
+                    <LinkAnchor
+                      className="nav-link text-warning ml-4"
+                      href="/"
+                      navigate={[Function]}
+                    >
+                      <a
+                        className="nav-link text-warning ml-4"
+                        href="/"
+                        onClick={[Function]}
+                      >
+                        Home
+                        <span
+                          className="sr-only"
+                        >
+                          (current)
+                        </span>
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <Link
+                    className="nav-link text-warning ml-4"
+                    to="/"
+                  >
+                    <LinkAnchor
+                      className="nav-link text-warning ml-4"
+                      href="/"
+                      navigate={[Function]}
+                    >
+                      <a
+                        className="nav-link text-warning ml-4"
+                        href="/"
+                        onClick={[Function]}
+                      >
+                        Travel Tips
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <Link
+                    className="nav-link text-warning ml-4"
+                    to="/login"
+                  >
+                    <LinkAnchor
+                      className="nav-link text-warning ml-4"
+                      href="/login"
+                      navigate={[Function]}
+                    >
+                      <a
+                        className="nav-link text-warning ml-4"
+                        href="/login"
+                        onClick={[Function]}
+                      >
+                        About
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <Link
+                    className="nav-link text-warning ml-4"
+                    to="/"
+                  >
+                    <LinkAnchor
+                      className="nav-link text-warning ml-4"
+                      href="/"
+                      navigate={[Function]}
+                    >
+                      <a
+                        className="nav-link text-warning ml-4"
+                        href="/"
+                        onClick={[Function]}
+                      >
+                        Sign Up
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item text-warning"
+                >
+                  <Link
+                    className="nav-link text-warning ml-4"
+                    to="/"
+                  >
+                    <LinkAnchor
+                      className="nav-link text-warning ml-4"
+                      href="/"
+                      navigate={[Function]}
+                    >
+                      <a
+                        className="nav-link text-warning ml-4"
+                        href="/"
+                        onClick={[Function]}
+                      >
+                        Services
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <Link
+                    className="nav-link text-warning ml-4"
+                    to="/"
+                  >
+                    <LinkAnchor
+                      className="nav-link text-warning ml-4"
+                      href="/"
+                      navigate={[Function]}
+                    >
+                      <a
+                        className="nav-link text-warning ml-4"
+                        href="/"
+                        onClick={[Function]}
+                      >
+                        Contact
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <Link
+                    className="nav-link text-warning ml-4"
+                    to="/"
+                  >
+                    <LinkAnchor
+                      className="nav-link text-warning ml-4"
+                      href="/"
+                      navigate={[Function]}
+                    >
+                      <a
+                        className="nav-link text-warning ml-4"
+                        href="/"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="book-btn"
+                        >
+                          Book now
+                        </button>
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </li>
+                <input
+                  className="search-input"
+                  placeholder=""
+                  type="search"
+                />
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </Navigation>
+      <Container
+        tag="div"
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="home-container"
+          >
+            <div
+              className="d-flex home-flex"
+            >
+              <div
+                className="home-intro-text"
+              >
+                <h1>
+                  Let us take you to your happy place
+                </h1>
+                <p>
+                  Welcome! At Barefoot Nomad, we value customers. We believe that customers' happiness is our happiness. Do not hesitate to work with us. Hit the button below to get started.
+                </p>
+                <Link
+                  className="start-btn"
+                  to="/login"
+                >
+                  <LinkAnchor
+                    className="start-btn"
+                    href="/login"
+                    navigate={[Function]}
+                  >
+                    <a
+                      className="start-btn"
+                      href="/login"
+                      onClick={[Function]}
+                    >
+                      Get Started
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </div>
+              <img
+                alt="Destination"
+                className="destination"
+                src=""
+              />
+            </div>
+            <h1
+              className="pop-services"
+            >
+              Our Popular Services
+            </h1>
+            <div
+              className="services"
+            >
+              <button
+                className="service-btn prev-btn"
+                data-testid="prev"
+                disabled={false}
+                onClick={[Function]}
+              >
+                <img
+                  src=""
+                />
+              </button>
+              <div
+                className="page"
+              >
+                <div
+                  className="col"
+                >
+                  <div
+                    className="cards-slider active-slide-2"
+                  >
+                    <div
+                      className="cards-slider-wrapper"
+                      style={
+                        Object {
+                          "transform": "translateX(-20%)",
+                        }
+                      }
+                    >
+                      <Card
+                        key="0"
+                        property={
+                          Object {
+                            "_id": "0",
+                            "description": " At Barefoot Nomad, you can book any hotel you want from an incredible list of hotels available worldwide at incomparable prices.",
+                            "img": "",
+                            "index": 0,
+                            "title": "Hotel booking",
+                          }
+                        }
+                      >
+                        <div
+                          className="card"
+                          id="card-0"
+                        >
+                          <img
+                            alt="Hotel booking"
+                            className="service-img"
+                            src=""
+                          />
+                          <div
+                            className="details"
+                          >
+                            <h1>
+                              Hotel booking
+                            </h1>
+                            <p
+                              className="description"
+                            >
+                               At Barefoot Nomad, you can book any hotel you want from an incredible list of hotels available worldwide at incomparable prices.
+                            </p>
+                          </div>
+                        </div>
+                      </Card>
+                      <Card
+                        key="1"
+                        property={
+                          Object {
+                            "_id": "1",
+                            "description": "Ever worried on how your vacation will be spent? Worry no more! Barefoot Nomad is here to make your vacation memorable than ever.",
+                            "img": "",
+                            "index": 1,
+                            "title": "Vacation booking",
+                          }
+                        }
+                      >
+                        <div
+                          className="card"
+                          id="card-1"
+                        >
+                          <img
+                            alt="Vacation booking"
+                            className="service-img"
+                            src=""
+                          />
+                          <div
+                            className="details"
+                          >
+                            <h1>
+                              Vacation booking
+                            </h1>
+                            <p
+                              className="description"
+                            >
+                              Ever worried on how your vacation will be spent? Worry no more! Barefoot Nomad is here to make your vacation memorable than ever.
+                            </p>
+                          </div>
+                        </div>
+                      </Card>
+                      <Card
+                        key="2"
+                        property={
+                          Object {
+                            "_id": "2",
+                            "description": "Barefoot Nomad offers booking services in over 150 destinations worldwide. Book yours today and benefit to work with a modernized company",
+                            "img": "",
+                            "index": 2,
+                            "title": "Flight booking",
+                          }
+                        }
+                      >
+                        <div
+                          className="card"
+                          id="card-2"
+                        >
+                          <img
+                            alt="Flight booking"
+                            className="service-img"
+                            src=""
+                          />
+                          <div
+                            className="details"
+                          >
+                            <h1>
+                              Flight booking
+                            </h1>
+                            <p
+                              className="description"
+                            >
+                              Barefoot Nomad offers booking services in over 150 destinations worldwide. Book yours today and benefit to work with a modernized company
+                            </p>
+                          </div>
+                        </div>
+                      </Card>
+                      <Card
+                        key="3"
+                        property={
+                          Object {
+                            "_id": "3",
+                            "description": "In dilemma failing to decide where to go first? Barefoot Nomad will advise you on how you can organize your travels and make everything work as expected",
+                            "img": "",
+                            "index": 3,
+                            "title": "Travel Advisory",
+                          }
+                        }
+                      >
+                        <div
+                          className="card"
+                          id="card-3"
+                        >
+                          <img
+                            alt="Travel Advisory"
+                            className="service-img"
+                            src=""
+                          />
+                          <div
+                            className="details"
+                          >
+                            <h1>
+                              Travel Advisory
+                            </h1>
+                            <p
+                              className="description"
+                            >
+                              In dilemma failing to decide where to go first? Barefoot Nomad will advise you on how you can organize your travels and make everything work as expected
+                            </p>
+                          </div>
+                        </div>
+                      </Card>
+                      <Card
+                        key="4"
+                        property={
+                          Object {
+                            "_id": "4",
+                            "description": "We're here for you. Invite Barefoot Nomad in your organization so we can help you in planning, excecusion, and following up your travels and vacations.",
+                            "img": "",
+                            "index": 4,
+                            "title": "Travel Consultancy",
+                          }
+                        }
+                      >
+                        <div
+                          className="card"
+                          id="card-4"
+                        >
+                          <img
+                            alt="Travel Consultancy"
+                            className="service-img"
+                            src=""
+                          />
+                          <div
+                            className="details"
+                          >
+                            <h1>
+                              Travel Consultancy
+                            </h1>
+                            <p
+                              className="description"
+                            >
+                              We're here for you. Invite Barefoot Nomad in your organization so we can help you in planning, excecusion, and following up your travels and vacations.
+                            </p>
+                          </div>
+                        </div>
+                      </Card>
+                      <Card
+                        key="5"
+                        property={
+                          Object {
+                            "_id": "5",
+                            "description": " At Barefoot Nomad, you can book any hotel you want from an incredible list of hotels available worldwide at incomparable prices.",
+                            "img": "",
+                            "index": 5,
+                            "title": "Hotel booking",
+                          }
+                        }
+                      >
+                        <div
+                          className="card"
+                          id="card-5"
+                        >
+                          <img
+                            alt="Hotel booking"
+                            className="service-img"
+                            src=""
+                          />
+                          <div
+                            className="details"
+                          >
+                            <h1>
+                              Hotel booking
+                            </h1>
+                            <p
+                              className="description"
+                            >
+                               At Barefoot Nomad, you can book any hotel you want from an incredible list of hotels available worldwide at incomparable prices.
+                            </p>
+                          </div>
+                        </div>
+                      </Card>
+                      <Card
+                        key="6"
+                        property={
+                          Object {
+                            "_id": "6",
+                            "description": "Ever worried on how your vacation will be spent? Worry no more! Barefoot Nomad is here to make your vacation memorable than ever.",
+                            "img": "",
+                            "index": 6,
+                            "title": "Vacation booking",
+                          }
+                        }
+                      >
+                        <div
+                          className="card"
+                          id="card-6"
+                        >
+                          <img
+                            alt="Vacation booking"
+                            className="service-img"
+                            src=""
+                          />
+                          <div
+                            className="details"
+                          >
+                            <h1>
+                              Vacation booking
+                            </h1>
+                            <p
+                              className="description"
+                            >
+                              Ever worried on how your vacation will be spent? Worry no more! Barefoot Nomad is here to make your vacation memorable than ever.
+                            </p>
+                          </div>
+                        </div>
+                      </Card>
+                      <Card
+                        key="7"
+                        property={
+                          Object {
+                            "_id": "7",
+                            "description": "Barefoot Nomad offers booking services in over 150 destinations worldwide. Book yours today and benefit to work with a modernized company",
+                            "img": "",
+                            "index": 7,
+                            "title": "Flight booking",
+                          }
+                        }
+                      >
+                        <div
+                          className="card"
+                          id="card-7"
+                        >
+                          <img
+                            alt="Flight booking"
+                            className="service-img"
+                            src=""
+                          />
+                          <div
+                            className="details"
+                          >
+                            <h1>
+                              Flight booking
+                            </h1>
+                            <p
+                              className="description"
+                            >
+                              Barefoot Nomad offers booking services in over 150 destinations worldwide. Book yours today and benefit to work with a modernized company
+                            </p>
+                          </div>
+                        </div>
+                      </Card>
+                      <Card
+                        key="8"
+                        property={
+                          Object {
+                            "_id": "8",
+                            "description": "In dilemma failing to decide where to go first? Barefoot Nomad will advise you on how you can organize your travels and make everything work as expected",
+                            "img": "",
+                            "index": 8,
+                            "title": "Travel Advisory",
+                          }
+                        }
+                      >
+                        <div
+                          className="card"
+                          id="card-8"
+                        >
+                          <img
+                            alt="Travel Advisory"
+                            className="service-img"
+                            src=""
+                          />
+                          <div
+                            className="details"
+                          >
+                            <h1>
+                              Travel Advisory
+                            </h1>
+                            <p
+                              className="description"
+                            >
+                              In dilemma failing to decide where to go first? Barefoot Nomad will advise you on how you can organize your travels and make everything work as expected
+                            </p>
+                          </div>
+                        </div>
+                      </Card>
+                      <Card
+                        key="9"
+                        property={
+                          Object {
+                            "_id": "9",
+                            "description": "We're here for you. Invite Barefoot Nomad in your organization so we can help you in planning, excecusion, and following up your travels and vacations.",
+                            "img": "",
+                            "index": 9,
+                            "title": "Travel Consultancy",
+                          }
+                        }
+                      >
+                        <div
+                          className="card"
+                          id="card-9"
+                        >
+                          <img
+                            alt="Travel Consultancy"
+                            className="service-img"
+                            src=""
+                          />
+                          <div
+                            className="details"
+                          >
+                            <h1>
+                              Travel Consultancy
+                            </h1>
+                            <p
+                              className="description"
+                            >
+                              We're here for you. Invite Barefoot Nomad in your organization so we can help you in planning, excecusion, and following up your travels and vacations.
+                            </p>
+                          </div>
+                        </div>
+                      </Card>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="service-btn next-btn"
+                data-testid="next"
+                disabled={false}
+                onClick={[Function]}
+              >
+                <img
+                  src=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </Container>
+      <Footer>
+        <div
+          className="footer-containter d-flex"
+        >
+          <div
+            className="social"
+          >
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+            >
+              <img
+                src=""
+              />
+            </a>
+            <a
+              href="http://instagram.com/"
+              target="_blank"
+            >
+              <img
+                src=""
+              />
+            </a>
+            <a
+              href="http://linkedin.com/"
+              target="_blank"
+            >
+              <img
+                src=""
+              />
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+            >
+              <img
+                src=""
+              />
+            </a>
+          </div>
+          <p>
+            © 2020 Barefoot Nomad
+          </p>
+        </div>
+      </Footer>
+    </HomePage>
+  </Router>
+</BrowserRouter>
+`;
