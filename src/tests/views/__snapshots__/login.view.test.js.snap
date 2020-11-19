@@ -7,10 +7,17 @@ exports[`Login page Should render with no errors 1`] = `
       [MockFunction] {
         "calls": Array [
           Array [
-            "Unable to login with provided credentials",
+            null,
+          ],
+          Array [
+            undefined,
           ],
         ],
         "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
           Object {
             "type": "return",
             "value": undefined,
@@ -23,10 +30,17 @@ exports[`Login page Should render with no errors 1`] = `
       [MockFunction] {
         "calls": Array [
           Array [
-            "Unable to login with provided credentials",
+            null,
+          ],
+          Array [
+            undefined,
           ],
         ],
         "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
           Object {
             "type": "return",
             "value": undefined,
@@ -39,10 +53,17 @@ exports[`Login page Should render with no errors 1`] = `
       [MockFunction] {
         "calls": Array [
           Array [
-            "Unable to login with provided credentials",
+            null,
+          ],
+          Array [
+            undefined,
           ],
         ],
         "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
           Object {
             "type": "return",
             "value": undefined,
