@@ -12,6 +12,9 @@ import adminRequests from './adminRequests'
 import forgot from './forgotPassword';
 import resetPassword from './resetPassword'
 
+import userRequests from "./requests/requestsReducer";
+import userRequest from "./requests/requestReducer";
+
 // function that contains all reducer objects.
 const allReducers = combineReducers({
   auth,
@@ -26,7 +29,9 @@ const allReducers = combineReducers({
   signup,
   adminRequests,
   forgot,
-  resetPassword
+  resetPassword,
+  userRequests,
+  userRequest,
 });
 
 export default allReducers;
