@@ -18,7 +18,8 @@ import "./App.scss";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import Trip from "./components/requests/single/index";
+import Trips from "./components/requests/all/index";
 library.add(fab, faTrashAlt, faEdit);
 
 const App = () => (
@@ -30,6 +31,7 @@ const App = () => (
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Signup} />
+
           <Route exact path="/profile" component={ViewProfile} />
           <Route
             exact
@@ -40,6 +42,10 @@ const App = () => (
           <Route exact path="/roles" component={Roles} />
         </Switch>
       </Container>
+      <Switch>
+        <Route exact path="/requests" component={Trips} />
+        <Route exact path="/requests/:id" component={Trip} />
+      </Switch>
       <Footer />
     </Router>
   </div>
