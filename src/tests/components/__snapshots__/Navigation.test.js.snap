@@ -1,41 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer Should match snapshot 1`] = `
-<div>
-  <div
+<Container
+  fluid={true}
+  tag="div"
+>
+  <Row
     className="navigation-title"
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
   >
-    <h1
-      className="nav-title text-warning"
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
     >
-      barefoot NOMAD
-    </h1>
-    <ul
-      className="center-ele"
+      <h1
+        className="nav-title text-warning"
+      >
+        barefoot NOMAD
+      </h1>
+    </Col>
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
     >
-      <form>
-        <select
-          className="lang-form"
-        >
-          <option
-            value="english"
+      <ul
+        className="center-ele"
+      >
+        <form>
+          <select
+            className="lang-form"
           >
-            English
-          </option>
-          <option
-            value="kinyarwanda"
-          >
-            Kinyarwanda
-          </option>
-          <option
-            value="français"
-          >
-            Français
-          </option>
-        </select>
-      </form>
-    </ul>
-  </div>
+            <option
+              value="english"
+            >
+              English
+            </option>
+            <option
+              value="kinyarwanda"
+            >
+              Kinyarwanda
+            </option>
+            <option
+              value="français"
+            >
+              Français
+            </option>
+          </select>
+        </form>
+      </ul>
+    </Col>
+  </Row>
   <nav
     className="navbar navbar-expand-lg navbar-light custom-nav"
   >
@@ -91,7 +130,7 @@ exports[`Footer Should match snapshot 1`] = `
             className="nav-link text-warning ml-4"
             to="/"
           >
-            Travel Tips
+            Travel Tips
           </Link>
         </li>
         <li
@@ -111,7 +150,7 @@ exports[`Footer Should match snapshot 1`] = `
             className="nav-link text-warning ml-4"
             to="/"
           >
-            Sign Up
+            Sign Up
           </Link>
         </li>
         <li
@@ -144,7 +183,7 @@ exports[`Footer Should match snapshot 1`] = `
             <button
               className="book-btn"
             >
-              Book now
+              Book now
             </button>
           </Link>
         </li>
@@ -156,5 +195,5 @@ exports[`Footer Should match snapshot 1`] = `
       </ul>
     </div>
   </nav>
-</div>
+</Container>
 `;

@@ -13,7 +13,9 @@ exports[`Service card Should match snapshot 1`] = `
   <div
     className="details"
   >
-    <h1>
+    <h1
+      className="card-title"
+    >
       Test Service
     </h1>
     <p

@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
+import {Container, Row, Col} from 'reactstrap'
+import {Link} from 'react-router-dom'
+import {data} from '../helpers/services'
 import destinations from '../assets/destinations.png'
 import previous from '../assets/previous.png'
 import next from '../assets/next.png'
-import {data} from '../helpers/services'
 import Card from './Card'
 import Navigation from './Navigation'
 import Footer from './Footer'
-import {Link} from 'react-router-dom'
-import { Container } from 'reactstrap';
 
- class HomePage extends Component {
+class NewHomePage extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -39,27 +39,27 @@ import { Container } from 'reactstrap';
       componentDidMount(){
         setInterval(this.nextProperty, 3000)
       }
-    
     render() {
         const {properties, property} = this.state;
         return (
-          <React.Fragment>
-            <Navigation />
-              <Container>
-              <div className='home-container'>
-                  <div className='d-flex home-flex'>
-                      <div className='home-intro-text'>
-                          <h1>Let us take you to your happy place</h1>
-                          <p>Welcome! At Barefoot Nomad, we value customers. We believe that 
-                              customers' happiness is our happiness. Do not hesitate to 
-                              work with us. Hit the button below to get started.
-                          </p>
-                          <Link to="/login" className='start-btn'>Get Started</Link>
-                      </div>
-                      <img src={destinations} alt='Destination' className='destination'/>
-                  </div>
-                  <h1 className='pop-services'>Our Popular Services</h1>
-                  <div className='services'>                    
+            <React.Fragment>
+                <Navigation/>
+                <Container>
+                    <Row className='home-flex d-flex'>
+                        <Col className='home-intro-text'>
+                            <h1>Let us take you to your happy place</h1>
+                            <p>Welcome! At Barefoot Nomad, we value customers. We believe that 
+                                customers' happiness is our happiness. Do not hesitate to 
+                                work with us. Hit the button below to get started.
+                            </p>
+                            <Link to="/login" className='start-btn'>Get Started</Link>
+                        </Col>
+                        <Col>
+                            <img src={destinations} alt='Destination' className='destination'/>
+                        </Col>
+                    </Row>
+                    <h1 className='pop-services'>Our Popular Services</h1>
+                    <div className='services'>                    
                       <button 
                           onClick={() => this.prevProperty()} 
                           disabled={property.index === 0}
@@ -68,7 +68,7 @@ import { Container } from 'reactstrap';
                               <img src={previous}/>
                       </button>
                       <div className="page">
-                          <div className="col">
+                          <div className="custom-col">
                               <div className={`cards-slider active-slide-${property.index}`}>
                                   <div className="cards-slider-wrapper" style={{
                                   'transform': `translateX(-${property.index*(100/properties.length)}%)`
@@ -91,11 +91,12 @@ import { Container } from 'reactstrap';
                               <img src={next}/>
                       </button>
                   </div>
-              </div>
-            </Container>
-            <Footer/>
-          </React.Fragment>           
+                </Container>
+                <Footer/> 
+                  
+            </React.Fragment>
         )
     }
 }
-export default HomePage
+
+export default NewHomePage
