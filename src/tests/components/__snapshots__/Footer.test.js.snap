@@ -1,47 +1,112 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer Should match snapshot 1`] = `
-<div
-  className="footer-containter d-flex"
+<Container
+  className="footer"
+  fluid={true}
+  tag="div"
 >
-  <div
-    className="social"
+  <Row
+    className="just-foot"
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
   >
-    <a
-      href="https://www.facebook.com/"
-      target="_blank"
+    <Row
+      className="social-links"
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
     >
-      <img
-        src=""
-      />
-    </a>
-    <a
-      href="http://instagram.com/"
-      target="_blank"
+      <Col
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+      >
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+        >
+          <img
+            src=""
+          />
+        </a>
+        <a
+          href="http://instagram.com/"
+          target="_blank"
+        >
+          <img
+            src=""
+          />
+        </a>
+        <a
+          href="http://linkedin.com/"
+          target="_blank"
+        >
+          <img
+            src=""
+          />
+        </a>
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+        >
+          <img
+            src=""
+          />
+        </a>
+      </Col>
+    </Row>
+    <Row
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
     >
-      <img
-        src=""
-      />
-    </a>
-    <a
-      href="http://linkedin.com/"
-      target="_blank"
-    >
-      <img
-        src=""
-      />
-    </a>
-    <a
-      href="https://twitter.com/"
-      target="_blank"
-    >
-      <img
-        src=""
-      />
-    </a>
-  </div>
-  <p>
-    © 2020 Barefoot Nomad
-  </p>
-</div>
+      <Col
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+      >
+        <p>
+          © 2020 Barefoot Nomad
+        </p>
+      </Col>
+    </Row>
+  </Row>
+</Container>
 `;

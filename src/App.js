@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import HomePage from './components/HomePage'
 
 
+
 const App = () => (
   <div className='app'>
     <Router>

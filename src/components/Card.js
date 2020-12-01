@@ -7,7 +7,7 @@ const Card = ({property}) => {
         <div id={`card-${index}`} className="card">
             <img src={img} alt={title} className='service-img' />
             <div className="details">
-                <h1>{title}</h1>
+                <h1 className='card-title'>{title}</h1>
                 <p className="description">
                     {description}
                 </p>
