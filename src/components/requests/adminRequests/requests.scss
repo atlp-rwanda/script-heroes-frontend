@@ -1,0 +1,83 @@
+@use '../../../variables.scss';
+
+.req-table {
+  background-color: variables.$mainBgColor;
+  font-size: 1em;
+  tr {
+    td {
+      padding-right: -1em;
+      border-spacing: -10px !important;
+    }
+  }
+}
+.table-cover {
+  padding: 3em;
+  background-color: variables.$mainBgColor;
+  border-radius: 2em;
+}
+.admin-requests {
+  background-color: variables.$navFooterColor;
+  margin: 2em 1em;
+  padding: 1em;
+  h1 {
+    font-size: 1.5em;
+    text-align: left !important;
+  }
+}
+.requests-intro {
+  background-color: variables.$navFooterColor;
+  padding-left: 1em;
+  height: 150%;
+  h1 {
+    font-size: 1.5em;
+    padding-top: 1em;
+    text-align: left !important;
+  }
+}
+thead {
+  background-color: variables.$navFooterColor;
+  font-size: 1.1em;
+}
+.admin-req {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-bottom: 2em;
+  .search-input {
+    background-color: variables.$navFooterColor;
+    border: 0;
+    border-bottom: 2px solid variables.$mainTextColor;
+    outline: none;
+    color: variables.$mainBgColor;
+    font-size: 0.9em;
+    padding-left: 5px;
+    padding-bottom: -10px;
+    height: 2.5em;
+    font-family: FontAwesome;
+  }
+  ::placeholder {
+    color: variables.$mainTextColor;
+    text-align: end;
+    font-size: 1.5em;
+  }
+}
+.loader {
+  width: 300px;
+}
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.decision {
+  text-align: right;
+}
+
+@media (max-width: 1218px) {
+  .admin-req {
+    display: flex;
+    flex-direction: column;
+  }
+  .requests-intro {
+    align-items: center;
+  }
+}

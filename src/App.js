@@ -20,12 +20,12 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 library.add(fab, faTrashAlt, faEdit);
+import AdminRequests from './components/requests/adminRequests/AdminRequests'
 
 const App = () => (
   <div className="app">
     <Router>
       <Navigation />
-      <Container>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
@@ -36,10 +36,10 @@ const App = () => (
             path="/profile/complete/:slug"
             component={CompleteProfile}
           />
+          <Route exact path="/request/manager" component={AdminRequests} />
           <Route exact path="/profile/update/:slug" component={UpdateProfile} />
           <Route exact path="/roles" component={Roles} />
         </Switch>
-      </Container>
       <Footer />
     </Router>
   </div>
