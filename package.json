@@ -6,7 +6,6 @@
     "dev": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "test": "jest --coverage",
-    "posttest": "coveralls < coverage/lcov.info",
     "storybook": "start-storybook -p 6006 --no-dll",
     "build-storybook": "build-storybook --no-dll",
     "start": "serve -s ./build",
