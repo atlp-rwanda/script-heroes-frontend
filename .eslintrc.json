@@ -19,6 +19,8 @@
     ],
     "rules": {
         "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error"
+        "react/jsx-uses-vars": "error",
+        "react/no-unescaped-entities": 0,
+        "react/display-name": "allow"
       }
 }

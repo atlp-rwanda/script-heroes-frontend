@@ -1,0 +1,10 @@
+.Image {
+  width: 42%;
+  margin: 20px 10px;
+}
+
+@media screen and (max-width: 766px) {
+  .Image {
+    display: none;
+  }
+}

@@ -1,6 +1,6 @@
 module.exports = {
   snapshotSerializers: ["enzyme-to-json/serializer"],
-  setupFilesAfterEnv: ["./src/setupTests.js"],
+  setupFilesAfterEnv: ["./setupTests.js"],
   verbose: true,
   coverageDirectory: "./coverage",
   moduleNameMapper: {

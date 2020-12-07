@@ -49,7 +49,7 @@ exports[`Footer Should match snapshot 1`] = `
           target="_blank"
         >
           <img
-            src=""
+            src="test-file-stub"
           />
         </a>
         <a
@@ -57,7 +57,7 @@ exports[`Footer Should match snapshot 1`] = `
           target="_blank"
         >
           <img
-            src=""
+            src="test-file-stub"
           />
         </a>
         <a
@@ -65,7 +65,7 @@ exports[`Footer Should match snapshot 1`] = `
           target="_blank"
         >
           <img
-            src=""
+            src="test-file-stub"
           />
         </a>
         <a
@@ -73,7 +73,7 @@ exports[`Footer Should match snapshot 1`] = `
           target="_blank"
         >
           <img
-            src=""
+            src="test-file-stub"
           />
         </a>
       </Col>

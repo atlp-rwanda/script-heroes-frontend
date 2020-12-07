@@ -135,7 +135,7 @@ exports[`Get next and previous elements Should get the next and previous service
                     <img
                       alt="logo"
                       className="logo"
-                      src=""
+                      src="test-file-stub"
                     />
                   </a>
                 </LinkAnchor>
@@ -236,16 +236,16 @@ exports[`Get next and previous elements Should get the next and previous service
                   >
                     <Link
                       className="nav-link text-warning ml-4"
-                      to="/"
+                      to="/signup"
                     >
                       <LinkAnchor
                         className="nav-link text-warning ml-4"
-                        href="/"
+                        href="/signup"
                         navigate={[Function]}
                       >
                         <a
                           className="nav-link text-warning ml-4"
-                          href="/"
+                          href="/signup"
                           onClick={[Function]}
                         >
                           Sign Up
@@ -416,7 +416,7 @@ exports[`Get next and previous elements Should get the next and previous service
                   <img
                     alt="Destination"
                     className="destination"
-                    src=""
+                    src="test-file-stub"
                   />
                 </div>
               </Col>
@@ -437,7 +437,7 @@ exports[`Get next and previous elements Should get the next and previous service
               onClick={[Function]}
             >
               <img
-                src=""
+                src="test-file-stub"
               />
             </button>
             <div
@@ -463,7 +463,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         Object {
                           "_id": "0",
                           "description": " At Barefoot Nomad, you can book any hotel you want from an incredible list of hotels available worldwide at incomparable prices.",
-                          "img": "",
+                          "img": "test-file-stub",
                           "index": 0,
                           "title": "Hotel booking",
                         }
@@ -476,7 +476,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         <img
                           alt="Hotel booking"
                           className="service-img"
-                          src=""
+                          src="test-file-stub"
                         />
                         <div
                           className="details"
@@ -500,7 +500,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         Object {
                           "_id": "1",
                           "description": "Ever worried on how your vacation will be spent? Worry no more! Barefoot Nomad is here to make your vacation memorable than ever.",
-                          "img": "",
+                          "img": "test-file-stub",
                           "index": 1,
                           "title": "Vacation booking",
                         }
@@ -513,7 +513,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         <img
                           alt="Vacation booking"
                           className="service-img"
-                          src=""
+                          src="test-file-stub"
                         />
                         <div
                           className="details"
@@ -537,7 +537,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         Object {
                           "_id": "2",
                           "description": "Barefoot Nomad offers booking services in over 150 destinations worldwide. Book yours today and benefit to work with a modernized company",
-                          "img": "",
+                          "img": "test-file-stub",
                           "index": 2,
                           "title": "Flight booking",
                         }
@@ -550,7 +550,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         <img
                           alt="Flight booking"
                           className="service-img"
-                          src=""
+                          src="test-file-stub"
                         />
                         <div
                           className="details"
@@ -574,7 +574,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         Object {
                           "_id": "3",
                           "description": "In dilemma failing to decide where to go first? Barefoot Nomad will advise you on how you can organize your travels and make everything work as expected",
-                          "img": "",
+                          "img": "test-file-stub",
                           "index": 3,
                           "title": "Travel Advisory",
                         }
@@ -587,7 +587,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         <img
                           alt="Travel Advisory"
                           className="service-img"
-                          src=""
+                          src="test-file-stub"
                         />
                         <div
                           className="details"
@@ -611,7 +611,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         Object {
                           "_id": "4",
                           "description": "We're here for you. Invite Barefoot Nomad in your organization so we can help you in planning, excecusion, and following up your travels and vacations.",
-                          "img": "",
+                          "img": "test-file-stub",
                           "index": 4,
                           "title": "Travel Consultancy",
                         }
@@ -624,7 +624,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         <img
                           alt="Travel Consultancy"
                           className="service-img"
-                          src=""
+                          src="test-file-stub"
                         />
                         <div
                           className="details"
@@ -648,7 +648,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         Object {
                           "_id": "5",
                           "description": " At Barefoot Nomad, you can book any hotel you want from an incredible list of hotels available worldwide at incomparable prices.",
-                          "img": "",
+                          "img": "test-file-stub",
                           "index": 5,
                           "title": "Hotel booking",
                         }
@@ -661,7 +661,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         <img
                           alt="Hotel booking"
                           className="service-img"
-                          src=""
+                          src="test-file-stub"
                         />
                         <div
                           className="details"
@@ -685,7 +685,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         Object {
                           "_id": "6",
                           "description": "Ever worried on how your vacation will be spent? Worry no more! Barefoot Nomad is here to make your vacation memorable than ever.",
-                          "img": "",
+                          "img": "test-file-stub",
                           "index": 6,
                           "title": "Vacation booking",
                         }
@@ -698,7 +698,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         <img
                           alt="Vacation booking"
                           className="service-img"
-                          src=""
+                          src="test-file-stub"
                         />
                         <div
                           className="details"
@@ -722,7 +722,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         Object {
                           "_id": "7",
                           "description": "Barefoot Nomad offers booking services in over 150 destinations worldwide. Book yours today and benefit to work with a modernized company",
-                          "img": "",
+                          "img": "test-file-stub",
                           "index": 7,
                           "title": "Flight booking",
                         }
@@ -735,7 +735,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         <img
                           alt="Flight booking"
                           className="service-img"
-                          src=""
+                          src="test-file-stub"
                         />
                         <div
                           className="details"
@@ -759,7 +759,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         Object {
                           "_id": "8",
                           "description": "In dilemma failing to decide where to go first? Barefoot Nomad will advise you on how you can organize your travels and make everything work as expected",
-                          "img": "",
+                          "img": "test-file-stub",
                           "index": 8,
                           "title": "Travel Advisory",
                         }
@@ -772,7 +772,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         <img
                           alt="Travel Advisory"
                           className="service-img"
-                          src=""
+                          src="test-file-stub"
                         />
                         <div
                           className="details"
@@ -796,7 +796,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         Object {
                           "_id": "9",
                           "description": "We're here for you. Invite Barefoot Nomad in your organization so we can help you in planning, excecusion, and following up your travels and vacations.",
-                          "img": "",
+                          "img": "test-file-stub",
                           "index": 9,
                           "title": "Travel Consultancy",
                         }
@@ -809,7 +809,7 @@ exports[`Get next and previous elements Should get the next and previous service
                         <img
                           alt="Travel Consultancy"
                           className="service-img"
-                          src=""
+                          src="test-file-stub"
                         />
                         <div
                           className="details"
@@ -838,7 +838,7 @@ exports[`Get next and previous elements Should get the next and previous service
               onClick={[Function]}
             >
               <img
-                src=""
+                src="test-file-stub"
               />
             </button>
           </div>
@@ -905,7 +905,7 @@ exports[`Get next and previous elements Should get the next and previous service
                           target="_blank"
                         >
                           <img
-                            src=""
+                            src="test-file-stub"
                           />
                         </a>
                         <a
@@ -913,7 +913,7 @@ exports[`Get next and previous elements Should get the next and previous service
                           target="_blank"
                         >
                           <img
-                            src=""
+                            src="test-file-stub"
                           />
                         </a>
                         <a
@@ -921,7 +921,7 @@ exports[`Get next and previous elements Should get the next and previous service
                           target="_blank"
                         >
                           <img
-                            src=""
+                            src="test-file-stub"
                           />
                         </a>
                         <a
@@ -929,7 +929,7 @@ exports[`Get next and previous elements Should get the next and previous service
                           target="_blank"
                         >
                           <img
-                            src=""
+                            src="test-file-stub"
                           />
                         </a>
                       </div>
