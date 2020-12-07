@@ -41,7 +41,7 @@ class NewHomePage extends Component {
     const { properties, property } = this.state;
     return (
       <React.Fragment>
-        <Container>
+        <Container className="home-container">
           <Row className='home-flex d-flex'>
             <Col className='home-intro-text'>
               <h1>Let us take you to your happy place</h1>

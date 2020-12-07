@@ -1,4 +1,6 @@
 import React from 'react';
+import "./homepage.scss";
+
 import PropTypes from 'prop-types';
 
 const Card = ({property}) => {
