@@ -1,6 +1,7 @@
-const Dotenv = require('dotenv-webpack');
+require('dotenv').config();
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   devServer: {
@@ -77,12 +78,12 @@ module.exports = {
       template: './src/index.html',
       baseUrl: '/',
     }),
-    new Dotenv({
-      path: './.env',
-      safe: true,
-      systemvars: true,
-      silent: true,
-      defaults: false,
+    new webpack.DefinePlugin({
+      'process.env': {
+        REACT_APP_BACKEND_URL: JSON.stringify(
+          process.env.REACT_APP_BACKEND_URL
+        ),
+      },
     }),
   ],
 };

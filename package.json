@@ -5,7 +5,7 @@
   "scripts": {
     "start": "serve -s ./build",
     "dev": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production",
+    "build": "webpack --config webpack.prod.js --mode production",
     "test": "jest --coverage -u",
     "storybook": "start-storybook -p 6006 --no-dll",
     "build-storybook": "build-storybook --no-dll",
@@ -27,6 +27,7 @@
     "bootstrap": "^4.5.3",
     "coveralls": "^3.1.0",
     "css-loader": "^5.0.1",
+    "dotenv": "^8.2.0",
     "dotenv-webpack": "^6.0.0",
     "error-overlay-webpack-plugin": "^0.4.1",
     "eslint-loader": "^4.0.2",
