@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Col,
   Row,
@@ -9,9 +9,9 @@ import {
   Label,
   Input,
   Spinner,
-} from "reactstrap";
-import Alert from "../commons/Alert";
-import styles from "./signup.module.scss";
+} from 'reactstrap';
+import Alert from '../commons/Alert';
+import styles from './signup.module.scss';
 
 /**
  * Represenst signup form component
@@ -35,14 +35,14 @@ import styles from "./signup.module.scss";
 const Signup = ({ error, response, loading, signupAction, errorSetting }) => {
   const [visible, setVisible] = useState(false);
   const [message, setMessage] = useState(null);
-  const [color, setColor] = useState("");
+  const [color, setColor] = useState('');
   const [user, setUser] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phoneNumber: "",
-    password: "",
-    confirmPassword: "",
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    password: '',
+    confirmPassword: '',
   });
 
   const handleChange = (e) => {
@@ -66,25 +66,25 @@ const Signup = ({ error, response, loading, signupAction, errorSetting }) => {
     const passwordFormat = /^[a-z]{4,}\d+/i;
     if (!nameFormat.test(firstName) || !nameFormat.test(lastName)) {
       errorSetting(
-        "Please enter a valid name for both first name or last name"
+        'Please enter a valid name for both first name or last name'
       );
-      setUser((user) => ({ ...user, password: "", confirmPassword: "" }));
+      setUser((user) => ({ ...user, password: '', confirmPassword: '' }));
     } else if (!emailFormat.test(email)) {
       errorSetting('Your email should be valid; example: "email@example.com"');
-      setUser((user) => ({ ...user, password: "", confirmPassword: "" }));
+      setUser((user) => ({ ...user, password: '', confirmPassword: '' }));
     } else if (!phoneFormat.test(phoneNumber)) {
       errorSetting(
         'Your phone number should be valid; example: "+250780000000"'
       );
-      setUser((user) => ({ ...user, password: "", confirmPassword: "" }));
+      setUser((user) => ({ ...user, password: '', confirmPassword: '' }));
     } else if (!passwordFormat.test(password)) {
       errorSetting(
-        "Password must be at least 5 characters including 4 letters and numbers"
+        'Password must be at least 5 characters including 4 letters and numbers'
       );
-      setUser((user) => ({ ...user, password: "", confirmPassword: "" }));
+      setUser((user) => ({ ...user, password: '', confirmPassword: '' }));
     } else if (password !== confirmPassword) {
       errorSetting("Passwords don't match");
-      setUser((user) => ({ ...user, password: "", confirmPassword: "" }));
+      setUser((user) => ({ ...user, password: '', confirmPassword: '' }));
     } else {
       signupAction({ firstName, lastName, phoneNumber, email, password });
     }
@@ -94,8 +94,8 @@ const Signup = ({ error, response, loading, signupAction, errorSetting }) => {
     if (error) {
       setMessage(error);
       setVisible(true);
-      setUser((user) => ({ ...user, password: "", confirmPassword: "" }));
-      setColor("danger");
+      setUser((user) => ({ ...user, password: '', confirmPassword: '' }));
+      setColor('danger');
       setTimeout(() => {
         setVisible(false);
       }, 5000);
@@ -103,18 +103,18 @@ const Signup = ({ error, response, loading, signupAction, errorSetting }) => {
     if (response) {
       setMessage(`${response}, Verification email has sent to your inbox`);
       setVisible(true);
-      setColor("info");
+      setColor('info');
       setUser({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phoneNumber: "",
-        password: "",
-        confirmPassword: "",
+        firstName: '',
+        lastName: '',
+        email: '',
+        phoneNumber: '',
+        password: '',
+        confirmPassword: '',
       });
       setTimeout(() => {
-        window.location = "./login";
-      }, 5000);
+        window.location = './login';
+      }, 15000);
     }
   }, [error, response]);
 
@@ -125,12 +125,12 @@ const Signup = ({ error, response, loading, signupAction, errorSetting }) => {
       <Row form>
         <Col md={6}>
           <FormGroup>
-            <Label for="firstName">First Name</Label>
+            <Label for='firstName'>First Name</Label>
             <Input
-              type="text"
-              name="firstName"
-              id="firstName"
-              placeholder="John"
+              type='text'
+              name='firstName'
+              id='firstName'
+              placeholder='John'
               value={user.firstName}
               onChange={handleChange}
               required
@@ -139,12 +139,12 @@ const Signup = ({ error, response, loading, signupAction, errorSetting }) => {
         </Col>
         <Col md={6}>
           <FormGroup>
-            <Label for="lastName">Last name</Label>
+            <Label for='lastName'>Last name</Label>
             <Input
-              type="text"
-              name="lastName"
-              id="lastName"
-              placeholder="Doe"
+              type='text'
+              name='lastName'
+              id='lastName'
+              placeholder='Doe'
               value={user.lastName}
               onChange={handleChange}
               required
@@ -155,12 +155,12 @@ const Signup = ({ error, response, loading, signupAction, errorSetting }) => {
       <Row form>
         <Col md={6}>
           <FormGroup>
-            <Label for="email">Email</Label>
+            <Label for='email'>Email</Label>
             <Input
-              type="email"
-              name="email"
-              id="exampleEmail"
-              placeholder="example@email.com"
+              type='email'
+              name='email'
+              id='exampleEmail'
+              placeholder='example@email.com'
               value={user.email}
               onChange={handleChange}
               required
@@ -169,12 +169,12 @@ const Signup = ({ error, response, loading, signupAction, errorSetting }) => {
         </Col>
         <Col md={6}>
           <FormGroup>
-            <Label for="phoneNumber">Phone number</Label>
+            <Label for='phoneNumber'>Phone number</Label>
             <Input
-              type="text"
-              name="phoneNumber"
-              id="phoneNumber"
-              placeholder="(+250)780 000 000"
+              type='text'
+              name='phoneNumber'
+              id='phoneNumber'
+              placeholder='(+250)780 000 000'
               value={user.phoneNumber}
               onChange={handleChange}
             />
@@ -184,12 +184,12 @@ const Signup = ({ error, response, loading, signupAction, errorSetting }) => {
       <Row form>
         <Col md={6}>
           <FormGroup>
-            <Label for="password">Password</Label>
+            <Label for='password'>Password</Label>
             <Input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
+              type='password'
+              name='password'
+              id='password'
+              placeholder='Password'
               value={user.password}
               onChange={handleChange}
               required
@@ -198,12 +198,12 @@ const Signup = ({ error, response, loading, signupAction, errorSetting }) => {
         </Col>
         <Col md={6}>
           <FormGroup>
-            <Label for="confirmPassword">Confirm your password</Label>
+            <Label for='confirmPassword'>Confirm your password</Label>
             <Input
-              type="password"
-              name="confirmPassword"
-              id="confirmPassword"
-              placeholder="Password"
+              type='password'
+              name='confirmPassword'
+              id='confirmPassword'
+              placeholder='Password'
               value={user.confirmPassword}
               onChange={handleChange}
               required
@@ -212,15 +212,15 @@ const Signup = ({ error, response, loading, signupAction, errorSetting }) => {
         </Col>
       </Row>
       <div className={styles.Response}>
-        {loading && <Spinner color="secondary" />}
+        {loading && <Spinner color='secondary' />}
         <Alert message={message} isOpen={visible} color={color} />
       </div>
       <Row className={styles.Button}>
         <Col md={6}>
-          <Button style={{ width: "100%" }}>Sign up</Button>
+          <Button style={{ width: '100%' }}>Sign up</Button>
         </Col>
         <Col md={6} className={styles.Link}>
-          Already have an account? <Link to="./login">Login</Link>
+          Already have an account? <Link to='./login'>Login</Link>
         </Col>
       </Row>
     </Form>
