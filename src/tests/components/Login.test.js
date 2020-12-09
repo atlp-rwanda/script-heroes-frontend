@@ -1,13 +1,11 @@
-import { describe } from "@jest/globals";
-import React from "react";
-import renderer from "react-test-renderer";
+import { shallow } from 'enzyme';
+import toJSON from 'enzyme-to-json';
+import React from 'react';
+import Login from '../../components/Login';
 
-import Login from "../../components/Login";
-
-describe("Login", () => {
-  test("snapshot renders", () => {
-    const component = renderer.create(<Login />);
-    let tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+describe('Footer', () => {
+  it('Should match snapshot', () => {
+    const wrapper = shallow(<Login />);
+    expect(toJSON(wrapper)).toMatchSnapshot();
   });
 });

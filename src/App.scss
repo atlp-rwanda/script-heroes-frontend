@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lancelot&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 $btnBgColor: #957f7f;
 $headerColor: #728191;
@@ -13,7 +13,7 @@ $mainBgColor: #fbfcfc;
 }
 .app {
   background-color: $mainBgColor;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   overflow: hidden;
   min-height: 100vh;
   position: relative;
@@ -78,7 +78,7 @@ $mainBgColor: #fbfcfc;
   align-items: center;
   padding-top: 0.7em;
   .nav-title {
-    font-family: "Lancelot", cursive;
+    font-family: 'Lancelot', cursive;
   }
   .center-ele {
     text-align: right;
@@ -127,7 +127,7 @@ $mainBgColor: #fbfcfc;
   max-width: 300px;
   margin: 0 auto;
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 350px;
@@ -180,7 +180,7 @@ $i: 0;
   position: relative;
   &:before,
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 50%;
     height: 75%;

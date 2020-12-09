@@ -1,23 +1,23 @@
-const path = require("path");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const Dotenv = require("dotenv-webpack");
+const Dotenv = require('dotenv-webpack');
+const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devServer: {
-    stats: "minimal",
+    stats: 'minimal',
     historyApiFallback: {
       disableDotRule: true,
     },
     port: 5000,
-    contentBase: "./build",
+    contentBase: './build',
   },
   entry: {
-    main: ["@babel/polyfill", "./src/index.js"],
+    main: ['@babel/polyfill', './src/index.js'],
   },
   output: {
-    path: path.join(__dirname, "build"),
-    filename: "bundle.js",
-    publicPath: "/",
+    path: path.join(__dirname, 'build'),
+    filename: 'bundle.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -25,48 +25,69 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
         },
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
+            loader: 'html-loader',
           },
         ],
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|jpe?g|gif)$/,
-        loader: "url-loader",
+        loader: 'url-loader',
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+          {
+            loader: 'react-svg-loader',
+            options: {
+              jsx: true,
+            },
+          },
+        ],
       },
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: ['.js', '.jsx'],
   },
   devServer: {
     hot: true,
     historyApiFallback: true,
-    contentBase: "./public",
+    contentBase: './public',
   },
   plugins: [
     new Dotenv({
-      path: ".env",
+      path: '.env',
       safe: true,
       allowEmptyValues: false,
     }),
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      baseUrl: "/",
+      template: './src/index.html',
+      baseUrl: '/',
+    }),
+    new Dotenv({
+      path: './.env',
+      safe: true,
+      systemvars: true,
+      silent: true,
+      defaults: false,
     }),
   ],
 };
