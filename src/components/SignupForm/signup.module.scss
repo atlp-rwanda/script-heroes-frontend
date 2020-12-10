@@ -4,6 +4,7 @@
   padding: 30px;
   width: 55%;
   margin: 0px 20px;
+  margin-bottom: 10em;
 }
 
 .SignupForm p {
@@ -31,5 +32,6 @@
 @media screen and (max-width: 400px) {
   .SignupForm {
     width: 99%;
+    margin-bottom: 11em;
   }
 }

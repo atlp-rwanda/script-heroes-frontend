@@ -1,312 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-$btnBgColor: #957f7f;
-$headerColor: #728191;
-$mainTextColor: #d4ac0d;
-$mainBgColor: #fbfcfc;
+@use 'variables';
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.app {
-  background-color: $mainBgColor;
-  font-family: 'Lato', sans-serif;
-  overflow: hidden;
-  min-height: 100vh;
-  position: relative;
-}
-
-.title {
-  font-size: 40px;
-  margin-top: 4em;
-  z-index: 1;
-  background-color: $headerColor;
-}
-.custom-nav {
-  background-color: $headerColor;
-  font-size: 1em;
-  margin-left: -30px;
-  margin-right: -20px;
-  .logo {
-    width: 70px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  .search-input {
-    background-color: $headerColor;
-    border: 0;
-    border-bottom: 2px solid $mainTextColor;
-    outline: none;
-    color: $mainBgColor;
-    font-size: 0.9em;
-    padding-left: 5px;
-    padding-bottom: -10px;
-    height: 2.5em;
-    font-family: FontAwesome;
+  .app {
+    background-color:variables.$mainBgColor;
+    font-family: variables.$textFont;
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
   }
-  ::placeholder {
-    color: $mainTextColor;
-    text-align: end;
-    font-size: 1.5em;
-  }
-  .navbar-brand {
-    margin-right: 4em;
-  }
-}
-.book-btn,
-.start-btn {
-  background-color: $btnBgColor;
-  color: $mainBgColor;
-  border: 0;
-  padding: 5px 25px;
-  border-radius: 7px;
-}
-
-.navbar-nav,
-.mr-auto {
-  flex: 1;
-  margin: auto !important;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.navigation-title {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  list-style-type: none;
-  align-items: center;
-  padding-top: 0.7em;
-  .nav-title {
-    font-family: 'Lancelot', cursive;
-  }
-  .center-ele {
-    text-align: right;
-    margin-right: 2em;
-  }
-  .lang-form {
-    background-color: $btnBgColor;
-    color: $mainBgColor;
-    font-weight: bolder;
-    border-radius: 5px;
-    outline: none;
-  }
-}
-
-.nav-title {
-  text-align: right;
-  color: $mainTextColor;
-}
-.custom-navig {
-  list-style-type: none;
-  background-color: blue;
-}
-
-.destination {
-  width: 100%;
-}
-.pop-services {
-  font-size: 25px;
-  color: $mainTextColor;
-  text-align: center;
-  padding: 1.5em;
-}
-.home-intro-text {
-  text-align: center;
-  padding: 3em;
-}
-.home-intro-text p {
-  padding: 3em 0;
-}
-.start-btn:hover {
-  color: $mainBgColor;
-  text-decoration: none;
-}
-.cards-slider {
-  position: relative;
-  max-width: 300px;
-  margin: 0 auto;
-  &:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 350px;
-    outline: 2px solid $mainTextColor;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-.cards-slider-wrapper {
-  display: flex;
-  position: absolute;
-  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  .card {
-    flex: 1;
-    min-width: 200px;
-    opacity: 0.7;
-    transform: scale(0.8);
-    box-shadow: none;
-    background-color: white;
-    border-color: white;
-    transition: opacity 300ms linear, border-color 300ms linear,
-      background-color 300ms linear,
-      transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    .details {
-      opacity: 0;
-      transition: opacity 150ms linear;
-      text-align: center;
-      .card-title {
-        font-size: 2em;
-      }
-    }
-  }
-}
-
-$i: 0;
-@for $i from 0 through 10 {
-  .cards-slider.active-slide-#{$i} #card-#{$i} {
-    opacity: 1;
-    transform: scale(1);
-    background-color: #f3f3f3;
-    border-color: #f3f3f3;
-    .details {
-      opacity: 1;
-    }
-  }
-}
-.custom-col {
-  height: 264px;
-  position: relative;
-  &:before,
-  &:after {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 75%;
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 1) 15%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
-  &:after {
-    left: auto;
-    right: 0;
-    background: linear-gradient(
-      to left,
-      rgba(255, 255, 255, 1) 15%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  }
-}
-
-.services {
-  display: grid;
-  grid-template-columns: 5% 90% 5%;
-  margin-bottom: 10em;
-}
-.service-img {
-  max-width: 300px;
-  height: 200px;
-}
-
-.service-btn {
-  z-index: 1;
-  outline: none;
-  border: 1px solid $mainBgColor;
-  background-color: $mainBgColor;
-  align-self: end;
-  padding: -20px;
-  img {
-    width: 60px;
-  }
-}
-.prev-btn {
-  margin-left: -70px;
-}
-@media (max-width: 360px) {
-  .services {
-    margin-bottom: 13em;
-  }
-}
-@media (max-width: 320px) {
-  .card-title {
-    font-size: 1.6em !important;
-  }
-  .details {
-    width: 87%;
-  }
-  .service-img {
-    height: 190px;
-  }
-}
-@media (max-width: 280px) {
-  .card-title {
-    font-size: 1.6em !important;
-  }
-  .service-img {
-    height: 160px;
-  }
-}
-
-@media (max-width: 978px) {
-  .home-flex {
+  .signup {
     display: flex;
-    flex-direction: column-reverse;
-    .destination {
-      align-self: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 90%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    h1 {
+      color: #f9a826;
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.3rem;
+      color: #f9a826;
     }
   }
-  .prev-btn {
-    margin-left: -10px;
-  }
-}
-@media (max-width: 440px) {
-  .nav-title {
-    font-size: 1.7em;
-  }
-}
-.footer {
-  margin-top: 3em;
-  background-color: $headerColor;
-  color: $mainTextColor;
-  width: 100%;
-  img {
-    width: 40px;
-    padding: 0.5em;
-  }
-  .copy {
-    background-color: $mainBgColor;
-  }
-  .just-foot {
-    justify-content: space-between;
-    padding: 0 1em;
-  }
-}
 
-.signup {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0 auto;
-  margin-top: 3em;
-  width: 90%;
-  img {
-    height: 100%;
-    width: 100%;
-  }
-  h1 {
-    color: #f9a826;
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-    color: #f9a826;
-  }
-}
