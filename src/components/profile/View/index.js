@@ -54,7 +54,7 @@ const View = () => {
     day: 'numeric',
   });
   const profileInfo = (
-    <Row className=''>
+    <Row>
       <Col md='6'>
         <Table borderless>
           <tbody>

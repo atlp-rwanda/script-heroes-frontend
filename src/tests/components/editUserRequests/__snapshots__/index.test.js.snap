@@ -1,0 +1,457 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UpdateRequests/> Should render without errors 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <UpdateRequest>
+        <Container
+          className="mb-5 p-5"
+          tag="div"
+        >
+          <div
+            className="mb-5 p-5 container"
+          >
+            <Form
+              className="mt-5"
+              onSubmit={[Function]}
+              tag="form"
+            >
+              <form
+                className="mt-5"
+                onSubmit={[Function]}
+              >
+                <h3
+                  className="text-center mt-3 text-color-new"
+                >
+                  Update Request
+                </h3>
+                <Row
+                  className="mt-5 background-new"
+                  tag="div"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  <div
+                    className="mt-5 background-new row"
+                  >
+                    <Col
+                      md="2"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <div
+                        className="col-md-2"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <div
+                            className="form-group"
+                          >
+                            <Label
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              <label
+                                className=""
+                              >
+                                Location
+                              </label>
+                            </Label>
+                            <Input
+                              className="border-success"
+                              name="location"
+                              onChange={[Function]}
+                              type="select"
+                              value=""
+                            >
+                              <select
+                                className="border-success form-control"
+                                name="location"
+                                onChange={[Function]}
+                                value=""
+                              />
+                            </Input>
+                          </div>
+                        </FormGroup>
+                      </div>
+                    </Col>
+                    <Col
+                      md="2"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <div
+                        className="col-md-2"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <div
+                            className="form-group"
+                          >
+                            <Label
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              <label
+                                className=""
+                              >
+                                Destination
+                              </label>
+                            </Label>
+                            <Input
+                              className="border-success"
+                              name="destination"
+                              onChange={[Function]}
+                              type="select"
+                              value=""
+                            >
+                              <select
+                                className="border-success form-control"
+                                name="destination"
+                                onChange={[Function]}
+                                value=""
+                              />
+                            </Input>
+                          </div>
+                        </FormGroup>
+                      </div>
+                    </Col>
+                    <Col
+                      md="2"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <div
+                        className="col-md-2"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <div
+                            className="form-group"
+                          >
+                            <Label
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              <label
+                                className=""
+                              >
+                                Start Date
+                              </label>
+                            </Label>
+                            <Input
+                              className="border-success"
+                              name="start"
+                              onChange={[Function]}
+                              type="date"
+                              value=""
+                            >
+                              <input
+                                className="border-success form-control"
+                                name="start"
+                                onChange={[Function]}
+                                type="date"
+                                value=""
+                              />
+                            </Input>
+                          </div>
+                        </FormGroup>
+                      </div>
+                    </Col>
+                    <Col
+                      md="2"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <div
+                        className="col-md-2"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <div
+                            className="form-group"
+                          >
+                            <Label
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              <label
+                                className=""
+                              >
+                                Return Date
+                              </label>
+                            </Label>
+                            <Input
+                              className="border-success"
+                              name="end"
+                              onChange={[Function]}
+                              type="date"
+                              value=""
+                            >
+                              <input
+                                className="border-success form-control"
+                                name="end"
+                                onChange={[Function]}
+                                type="date"
+                                value=""
+                              />
+                            </Input>
+                          </div>
+                        </FormGroup>
+                      </div>
+                    </Col>
+                    <Col
+                      md="2"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <div
+                        className="col-md-2"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <div
+                            className="form-group"
+                          >
+                            <Label
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              <label
+                                className=""
+                              >
+                                Travel Reasons
+                              </label>
+                            </Label>
+                            <Input
+                              className="border-success"
+                              name="reason"
+                              onChange={[Function]}
+                              placeholder="eg: Trip"
+                              type="text"
+                              value=""
+                            >
+                              <input
+                                className="border-success form-control"
+                                name="reason"
+                                onChange={[Function]}
+                                placeholder="eg: Trip"
+                                type="text"
+                                value=""
+                              />
+                            </Input>
+                          </div>
+                        </FormGroup>
+                      </div>
+                    </Col>
+                    <Col
+                      md="2"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <div
+                        className="col-md-2"
+                      >
+                        <FormGroup
+                          tag="div"
+                        >
+                          <div
+                            className="form-group"
+                          >
+                            <Label
+                              tag="label"
+                              widths={
+                                Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ]
+                              }
+                            >
+                              <label
+                                className=""
+                              >
+                                Accommodation
+                              </label>
+                            </Label>
+                            <Input
+                              className="border-success"
+                              name="accomodation"
+                              onChange={[Function]}
+                              type="select"
+                              value=""
+                            >
+                              <select
+                                className="border-success form-control"
+                                name="accomodation"
+                                onChange={[Function]}
+                                value=""
+                              />
+                            </Input>
+                          </div>
+                        </FormGroup>
+                      </div>
+                    </Col>
+                  </div>
+                </Row>
+                <div
+                  className=" text-center mt-3 mb-3"
+                >
+                  <Button
+                    className="btn-color"
+                    color="secondary"
+                    tag="button"
+                  >
+                    <button
+                      aria-label={null}
+                      className="btn-color btn btn-secondary"
+                      onClick={[Function]}
+                    >
+                      SEND
+                    </button>
+                  </Button>
+                </div>
+              </form>
+            </Form>
+          </div>
+        </Container>
+      </UpdateRequest>
+    </Router>
+  </BrowserRouter>
+</Provider>
+`;
