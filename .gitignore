@@ -1,7 +1,9 @@
 # dependencies
+/node_modules
+/.vscode
+
 /.pnp
 .pnp.js
-/node_modules
 
 
 # testing

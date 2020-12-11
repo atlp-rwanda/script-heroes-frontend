@@ -26,10 +26,11 @@ exports[`Get next and previous elements Should get the next and previous service
   >
     <NewHomePage>
       <Container
+        className="home-container"
         tag="div"
       >
         <div
-          className="container"
+          className="home-container container"
         >
           <Row
             className="home-flex d-flex"
