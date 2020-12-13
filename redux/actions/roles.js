@@ -1,11 +1,11 @@
 import { GET_ROLES, CREATE_ROLE, DELETE_ROLE, UPDATE_ROLE } from "./types";
 import { creating, updating, deleting, resolved } from "./statuses";
 import { success, resError } from "./alerts";
-import axiosBase from "../axiosBase";
+import axiosBase from "../../src/utils/axios";
 
 export const getRoles = () => async (dispatch) => {
   try {
-    const res = await axiosBase.get("/role");
+    const res = await axiosBase.get("/api/role");
     dispatch({
       type: GET_ROLES,
       payload: res.data,
@@ -20,7 +20,7 @@ export const getRoles = () => async (dispatch) => {
 export const createRole = (role) => async (dispatch) => {
   dispatch(creating());
   try {
-    const res = await axiosBase.post("/role/register", role);
+    const res = await axiosBase.post("/api/role/register", role);
     dispatch({
       type: CREATE_ROLE,
       payload: res.data,
@@ -36,7 +36,7 @@ export const createRole = (role) => async (dispatch) => {
 export const updateRole = (id, role) => async (dispatch) => {
   dispatch(updating());
   try {
-    const res = await axiosBase.patch(`/role/${id}`, role);
+    const res = await axiosBase.patch(`/api/role/${id}`, role);
     dispatch({
       type: UPDATE_ROLE,
       payload: res.data,
@@ -52,7 +52,7 @@ export const updateRole = (id, role) => async (dispatch) => {
 export const deleteRole = (role) => async (dispatch) => {
   dispatch(deleting());
   try {
-    const res = await axiosBase.delete(`/role/${role.id}`);
+    const res = await axiosBase.delete(`/api/role/${role.id}`);
     dispatch({
       type: DELETE_ROLE,
       payload: res.data,

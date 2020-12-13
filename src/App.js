@@ -5,7 +5,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faTrashAlt, faEdit } from "@fortawesome/free-solid-svg-icons";
 import Home from "./components/HomePage";
-import Login from "./Views/login";
+import Login from "./views/login";
 import Signup from "./Views/Signup";
 import ViewProfile from "./components/profile/View";
 import CompleteProfile from "./components/profile/Complete";
