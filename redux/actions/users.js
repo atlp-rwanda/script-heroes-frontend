@@ -1,11 +1,11 @@
 import { GET_USERS, ASSIGN_ROLE, SET_ERROR } from "./types";
 import { assigning, resolved } from "./statuses";
 import { success, resError } from "./alerts";
-import axiosBase from "../axiosBase";
+import axiosBase from "../../src/utils/axios";
 
 export const getUsers = () => async (dispatch) => {
   try {
-    const res = await axiosBase.get("/users");
+    const res = await axiosBase.get("/api/users");
     dispatch({
       type: GET_USERS,
       payload: res.data,
@@ -19,11 +19,11 @@ export const getUsers = () => async (dispatch) => {
 export const assignRole = ({ userRole, email }) => async (dispatch) => {
   dispatch(assigning());
   try {
-    const res = await axiosBase.post("/role/assign", {
+    const res = await axiosBase.post("/api/role/assign", {
       userRole,
       email,
     });
-    const usersRes = await axiosBase.get("/users");
+    const usersRes = await axiosBase.get("/api/users");
 
     dispatch({
       type: ASSIGN_ROLE,

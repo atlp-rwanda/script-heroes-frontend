@@ -1,24 +1,24 @@
-require('dotenv').config();
-const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+require("dotenv").config();
+const path = require("path");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
   devServer: {
-    stats: 'minimal',
+    stats: "minimal",
     historyApiFallback: {
       disableDotRule: true,
     },
     port: 5000,
-    contentBase: './build',
+    contentBase: "./build",
   },
   entry: {
-    main: ['@babel/polyfill', './src/index.js'],
+    main: ["@babel/polyfill", "./src/index.js"],
   },
   output: {
-    path: path.join(__dirname, 'build'),
-    filename: 'bundle.js',
-    publicPath: '/',
+    path: path.join(__dirname, "build"),
+    filename: "bundle.js",
+    publicPath: "/",
   },
   module: {
     rules: [
@@ -26,37 +26,37 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: 'html-loader',
+            loader: "html-loader",
           },
         ],
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|jpe?g|gif)$/,
-        loader: 'url-loader',
+        loader: "url-loader",
       },
       {
         test: /\.svg$/,
         use: [
           {
-            loader: 'babel-loader',
+            loader: "babel-loader",
           },
           {
-            loader: 'react-svg-loader',
+            loader: "react-svg-loader",
             options: {
               jsx: true,
             },
@@ -66,20 +66,15 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
-  },
-  devServer: {
-    hot: true,
-    historyApiFallback: true,
-    contentBase: './public',
+    extensions: [".js", ".jsx"],
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/index.html',
-      baseUrl: '/',
+      template: "./src/index.html",
+      baseUrl: "/",
     }),
     new webpack.DefinePlugin({
-      'process.env': {
+      "process.env": {
         REACT_APP_BACKEND_URL: JSON.stringify(
           process.env.REACT_APP_BACKEND_URL
         ),
