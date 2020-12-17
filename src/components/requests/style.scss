@@ -1,0 +1,197 @@
+@use "../../variables.scss";
+.requests {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-gap: 5%;
+  height: 90vh;
+  margin-top: -1%;
+}
+.requests .requests-wrapper {
+  overflow: auto;
+  background: variables.$mainBgColor;
+  margin-bottom: -10%;
+  margin-top: 5%;
+  height: 85vh;
+  padding: 0% 1% 1% 1%;
+}
+
+.pre-loader {
+  color: variables.$navFooterColor;
+  font-size: large;
+}
+.pre-loader span {
+  color: variables.$navFooterColor;
+  margin-right: 5px;
+}
+Table {
+  background: white;
+  color: black;
+  width: 100%;
+}
+Table thead {
+  background-color: #728191;
+  height: 5vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  scroll-behavior: smooth;
+  text-align: center;
+}
+
+Table tbody td .view,
+Table tbody td .edit,
+Table tbody td .delete {
+  border: none;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 10%;
+  color: white;
+  cursor: pointer;
+}
+Table tbody td .view:hover,
+Table tbody td .edit:hover,
+Table tbody td .delete:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+}
+
+.side-bar {
+  background: variables.$navFooterColor;
+  margin-bottom: -27.5%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+}
+.side-bar .getall {
+  font-size: large;
+  margin-left: 5%;
+  cursor: pointer;
+  color: black;
+  height: 3vh;
+  text-decoration: none;
+}
+.side-bar .getall:hover {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.side-bar .search-bar {
+  margin: 5%;
+  width: 100%;
+}
+.search-input {
+  background-color: variables.$navFooterColor;
+  border: 0;
+  border-bottom: 2px solid variables.$mainTextColor;
+  outline: none;
+  color: variables.$mainBgColor;
+  font-size: 0.9em;
+  padding-left: 5px;
+  padding-bottom: -10px;
+  height: 2.5em;
+  font-family: FontAwesome;
+}
+::placeholder {
+  color: variables.$mainTextColor;
+  text-align: end;
+  font-size: 1.5em;
+}
+Form .search {
+  display: grid;
+  grid-template-columns: 80% 15%;
+  height: inherit;
+  width: inherit;
+}
+Form {
+  height: inherit;
+  max-width: 80%;
+  flex: 1;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 400px) {
+  .side-bar .getall {
+    font-size: smaller;
+  }
+  .side-bar {
+    height: 40%;
+  }
+  .requests {
+    display: flex;
+    flex-direction: column;
+  }
+  ._accomodation h1 {
+    font-size: smaller;
+  }
+  ._request h1 {
+    font-size: smaller;
+  }
+  Table thead {
+    height: 3vh;
+    font-size: xx-small;
+  }
+  Table tbody {
+    font-size: xx-small;
+  }
+  Table tbody td .view,
+  Table tbody td .edit,
+  Table tbody td .delete {
+    padding: 2px;
+    margin: 0px;
+    transform: scale(0.8);
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 768px) {
+  .side-bar .getall {
+    font-size: small;
+  }
+  .side-bar {
+    height: 40%;
+  }
+  .requests {
+    display: flex;
+    flex-direction: column;
+  }
+  ._accomodation h1 {
+    font-size: large;
+  }
+  ._request h1 {
+    font-size: large;
+  }
+  Table thead {
+    height: 3vh;
+    font-size: smaller;
+  }
+  Table tbody {
+    font-size: smaller;
+  }
+}
+@media only screen and(min-width: 769px) and (max-width: 864px) {
+  .side-bar .getall {
+    font-size: small;
+  }
+  Table tbody td .view,
+  Table tbody td .edit,
+  Table tbody td .delete {
+    transform: scale(0.9);
+    padding: 2px;
+    margin: -1px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  Table thead {
+    height: 3vh;
+    font-size: small;
+  }
+  Table tbody {
+    font-size: small;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  Table thead {
+    height: 3vh;
+    font-size: medium;
+  }
+  Table tbody {
+    font-size: medium;
+  }
+}

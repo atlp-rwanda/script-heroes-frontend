@@ -170,6 +170,17 @@ exports[`App snapshot renders 1`] = `
           >
             <a
               className="nav-link text-warning ml-4"
+              href="/requests"
+              onClick={[Function]}
+            >
+              Requests
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link text-warning ml-4"
               href="/"
               onClick={[Function]}
             >

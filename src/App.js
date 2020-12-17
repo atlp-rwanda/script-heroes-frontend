@@ -13,12 +13,14 @@ import UpdateProfile from "./components/profile/Update";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Roles from "./views/Roles/Roles";
+import Comment from "./components/comments";
 
 import "./App.scss";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import Trip from "./components/requests/single/index";
+import Trips from "./components/requests/all/index";
 library.add(fab, faTrashAlt, faEdit);
 
 const App = () => (
@@ -30,6 +32,7 @@ const App = () => (
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Signup} />
+
           <Route exact path="/profile" component={ViewProfile} />
           <Route
             exact
@@ -38,8 +41,13 @@ const App = () => (
           />
           <Route exact path="/profile/update/:slug" component={UpdateProfile} />
           <Route exact path="/roles" component={Roles} />
+          <Route exact path="/comments" component={Comment} />
         </Switch>
       </Container>
+      <Switch>
+        <Route exact path="/requests" component={Trips} />
+        <Route exact path="/requests/:id" component={Trip} />
+      </Switch>
       <Footer />
     </Router>
   </div>
