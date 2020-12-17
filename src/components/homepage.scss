@@ -17,24 +17,25 @@
   .navbar-brand{
     margin-right: 4em;
   }
+  .search-input{
+    background-color: variables.$navFooterColor;;
+    border: 0;
+    border-bottom: 2px solid variables.$mainTextColor;
+    outline: none;
+    color: variables.$mainBgColor;
+    font-size: .9em;
+    padding-left: 5px;
+    padding-bottom: -10px;
+    height: 2.5em;  
+    font-family: FontAwesome;
+  }
+  ::placeholder{
+    color: variables.$mainTextColor;
+    text-align: end;
+    font-size: 1.5em;
+  }
 }
-.search-input{
-  background-color: variables.$navFooterColor;;
-  border: 0;
-  border-bottom: 2px solid variables.$mainTextColor;
-  outline: none;
-  color: variables.$mainBgColor;
-  font-size: .9em;
-  padding-left: 5px;
-  padding-bottom: -10px;
-  height: 2.5em;  
-  font-family: FontAwesome;
-}
-::placeholder{
-  color: variables.$mainTextColor;
-  text-align: end;
-  font-size: 1.5em;
-}
+
 .book-btn, .start-btn{
   background-color: variables.$btnBgColor;
   color: variables.$mainBgColor;
@@ -58,7 +59,7 @@
   align-items: center;
   padding-top:.7em;
   .nav-title{
-    font-family: variables.$titleFont;
+    font-family: variables.$titleFont !important;
   }
   .center-ele{
     text-align: right;

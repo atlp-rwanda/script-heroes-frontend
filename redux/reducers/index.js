@@ -8,6 +8,7 @@ import roles from "./roles";
 import users from "./users";
 import statuses from "./statuses";
 import alerts from "./alerts";
+import adminRequests from './adminRequests'
 
 // function that contains all reducer objects.
 const allReducers = combineReducers({
@@ -21,6 +22,7 @@ const allReducers = combineReducers({
   users,
   alerts,
   signup,
+  adminRequests
 });
 
 export default allReducers;
