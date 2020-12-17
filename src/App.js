@@ -13,6 +13,7 @@ import UpdateProfile from "./components/profile/Update";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Roles from "./views/Roles/Roles";
+import Comment from "./components/comments";
 
 import "./App.scss";
 import "jquery/dist/jquery.min.js";
@@ -40,6 +41,7 @@ const App = () => (
           />
           <Route exact path="/profile/update/:slug" component={UpdateProfile} />
           <Route exact path="/roles" component={Roles} />
+          <Route exact path="/comments" component={Comment} />
         </Switch>
       </Container>
       <Switch>
