@@ -9,6 +9,7 @@ import {
   Row,
   Col,
   Alert,
+  Container,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { updateProfile, getProfile } from '../../../../redux/actions/profile';
@@ -287,10 +288,12 @@ const Update = () => {
     </Col>
   );
   return (
-    <Row className='clearfix  mt-5 height mb-5 pb-5'>
-      {profile}
-      <Image />
-    </Row>
+    <Container>
+      <Row className='clearfix  mt-5 height mb-5 pb-5'>
+        {profile}
+        <Image />
+      </Row>
+    </Container>
   );
 };
 Update.propTypes = {
