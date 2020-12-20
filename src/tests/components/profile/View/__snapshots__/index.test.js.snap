@@ -2,222 +2,242 @@
 
 exports[`<ViewProfile/> Should render with no errors 1`] = `
 <View>
-  <div
-    className="background clearfix mt-5 height"
+  <Container
+    className="background height text-color"
+    tag="div"
   >
-    <h1
-      className="text-center text-color mb-5"
+    <div
+      className="background height text-color container"
     >
-      Profile Information
-    </h1>
-    <Row
-      tag="div"
-      widths={
-        Array [
-          "xs",
-          "sm",
-          "md",
-          "lg",
-          "xl",
-        ]
-      }
-    >
-      <div
-        className="row"
+      <h3
+        className="text-center mb-2"
       >
-        <Col
-          md="6"
-          tag="div"
-          widths={
-            Array [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl",
-            ]
-          }
+        Profile Information
+      </h3>
+      <Row
+        className=""
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+      >
+        <div
+          className="row"
         >
-          <div
-            className="col-md-6"
+          <Col
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
           >
-            <Table
-              borderless={true}
-              responsiveTag="div"
-              tag="table"
+            <div
+              className="col"
             >
-              <table
-                className="table table-borderless"
+              <Table
+                borderless={true}
+                responsiveTag="div"
+                tag="table"
               >
-                <thead>
+                <table
+                  className="table table-borderless"
+                >
                   <tr>
                     <td
-                      className="text-color"
+                      className="text-uppercase text-color"
                     >
                       <i
                         className="fas fa-user mr-3 text-color"
                       />
                       FIRST NAME:
                     </td>
-                    <td />
+                    <td
+                      className="text-capitalize"
+                    />
                   </tr>
                   <tr>
                     <td
-                      className="text-color"
+                      className="text-uppercase text-color"
                     >
                       <i
                         className="fas fa-user mr-3 text-color"
                       />
-                      LAST NAME:
+                      last NAME:
                     </td>
-                    <td />
+                    <td
+                      className="text-capitalize"
+                    />
                   </tr>
                   <tr>
                     <td
-                      className="text-color"
+                      className="text-uppercase text-color"
                     >
                       <i
                         className="fas fa-envelope mr-3 text-color"
                       />
-                      EMAIL:
+                      email:
                     </td>
                     <td />
                   </tr>
                   <tr>
                     <td
-                      className="text-color"
+                      className="text-uppercase text-color"
                     >
                       <i
                         className="fas fa-transgender mr-3 text-color"
                       />
-                      GENDER:
+                      gender:
                     </td>
-                    <td />
+                    <td
+                      className="text-capitalize"
+                    />
                   </tr>
                   <tr>
                     <td
-                      className="text-color"
+                      className="text-uppercase text-color"
                     >
                       <i
                         className="fas fa-calendar-day mr-3 text-color"
                       />
-                      DATE OF BIRTH:
+                      Date of birth:
                     </td>
-                    <td>
+                    <td
+                      className="text-capitalize"
+                    >
                       Invalid Date
                     </td>
                   </tr>
                   <tr>
                     <td
-                      className="text-color"
+                      className="text-uppercase text-color"
                     >
                       <i
                         className="fas fa-phone-alt mr-3 text-color"
                       />
-                      PHONE NUMBER:
+                      Phone number:
                     </td>
-                    <td />
+                    <td
+                      className="text-capitalize"
+                    />
                   </tr>
-                </thead>
-              </table>
-            </Table>
-          </div>
-        </Col>
-        <Col
-          md="6"
-          tag="div"
-          widths={
-            Array [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl",
-            ]
-          }
-        >
-          <div
-            className="col-md-6"
+                </table>
+              </Table>
+            </div>
+          </Col>
+          <Col
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
           >
-            <Table
-              borderless={true}
-              responsiveTag="div"
-              tag="table"
+            <div
+              className="col"
             >
-              <table
-                className="table table-borderless"
+              <Table
+                borderless={true}
+                responsiveTag="div"
+                tag="table"
               >
-                <thead>
+                <table
+                  className="table table-borderless"
+                >
                   <tr>
                     <td
-                      className="text-color"
+                      className="text-uppercase text-color"
                     >
                       <i
                         className="fas fa-flag mr-3 text-color"
                       />
-                      COUNTRY OF RESIDENCE:
+                      country of residence:
                     </td>
-                    <td />
+                    <td
+                      className="text-capitalize"
+                    />
                   </tr>
                   <tr>
                     <td
-                      className="text-color"
+                      className="text-uppercase text-color"
                     >
                       <i
                         className="fas fa-coins mr-3 text-color"
                       />
-                      CURRENCY:
+                      currency:
                     </td>
-                    <td />
+                    <td
+                      className="text-capitalize"
+                    />
                   </tr>
                   <tr>
                     <td
-                      className="text-color"
+                      className="text-uppercase text-color"
                     >
                       <i
                         className="fas fa-language mr-3 text-color"
                       />
-                      LANGUAGE:
+                      language:
                     </td>
-                    <td />
+                    <td
+                      className="text-capitalize"
+                    />
                   </tr>
                   <tr>
                     <td
-                      className="text-color"
+                      className="text-uppercase text-color"
                     >
                       <i
                         className="fas fa-building mr-3 text-color"
                       />
-                      DEPARTMENT:
+                      department:
                     </td>
-                    <td />
+                    <td
+                      className="text-capitalize"
+                    />
                   </tr>
                   <tr>
                     <td
-                      className="text-color"
+                      className="text-uppercase text-color"
                     >
                       <i
                         className="fas fa-user-edit mr-3 text-color"
                       />
-                      LINE MANAGER:
+                      line manager:
                     </td>
-                    <td />
+                    <td
+                      className="text-capitalize"
+                    />
                   </tr>
-                </thead>
-              </table>
-            </Table>
-          </div>
-        </Col>
-      </div>
-    </Row>
-    <a
-      className="float-right text-color none m-1"
-      href="/profile/complete/undefined"
-    >
-      <strong>
-         COMPLETE 
-      </strong>
-    </a>
-  </div>
+                </table>
+              </Table>
+            </div>
+          </Col>
+        </div>
+      </Row>
+      <a
+        className="float-right text-color none m-1"
+        href="/profile/complete/undefined"
+      >
+        <strong>
+           COMPLETE 
+        </strong>
+      </a>
+    </div>
+  </Container>
 </View>
 `;

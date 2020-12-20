@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Table, Row, Col } from 'reactstrap';
+import { Table, Row, Col, Container } from 'reactstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { getProfile } from '../../../../redux/actions/profile';
 import PropTypes from 'prop-types';
@@ -54,96 +54,101 @@ const View = () => {
     day: 'numeric',
   });
   const profileInfo = (
-    <Row>
+    <Row className=''>
       <Col md='6'>
         <Table borderless>
-          <thead>
+          <tbody>
             <tr>
-              <td className='text-color'>
+              <td className='text-uppercase text-color'>
                 <i className='fas fa-user mr-3 text-color'></i>FIRST NAME:
               </td>
-              <td>{firstName}</td>
+              <td className='text-capitalize'>{firstName}</td>
             </tr>
             <tr>
-              <td className='text-color'>
-                <i className='fas fa-user mr-3 text-color'></i>LAST NAME:
+              <td className='text-uppercase text-color'>
+                <i className='fas fa-user mr-3 text-color'></i>last NAME:
               </td>
-              <td>{lastName}</td>
+              <td className='text-capitalize'>{lastName}</td>
             </tr>
             <tr>
-              <td className='text-color'>
-                <i className='fas fa-envelope mr-3 text-color'></i>EMAIL:
+              <td className='text-uppercase text-color'>
+                <i className='fas fa-envelope mr-3 text-color'></i>email:
               </td>
               <td>{email}</td>
             </tr>
             <tr>
-              <td className='text-color'>
-                <i className='fas fa-transgender mr-3 text-color'></i>
-                GENDER:
+              <td className='text-uppercase text-color'>
+                <i className='fas fa-transgender mr-3 text-color'></i>gender:
               </td>
-              <td>{gender}</td>
+              <td className='text-capitalize'>{gender}</td>
             </tr>
             <tr>
-              <td className='text-color'>
-                <i className='fas fa-calendar-day mr-3 text-color'></i>DATE OF
-                BIRTH:
+              <td className='text-uppercase text-color'>
+                <i className='fas fa-calendar-day mr-3 text-color'></i>Date of
+                birth:
               </td>
-              <td>{date}</td>
+              <td className='text-capitalize'>
+                {new Date(birthdate).toLocaleDateString('en-US', {
+                  weekday: 'long',
+                  year: 'numeric',
+                  month: 'short',
+                  day: 'numeric',
+                })}
+              </td>
             </tr>
             <tr>
-              <td className='text-color'>
-                <i className='fas fa-phone-alt mr-3 text-color'></i>PHONE
-                NUMBER:
+              <td className='text-uppercase text-color'>
+                <i className='fas fa-phone-alt mr-3 text-color'></i>Phone
+                number:
               </td>
-              <td>{phoneNumber}</td>
+              <td className='text-capitalize'>{phoneNumber}</td>
             </tr>
-          </thead>
+          </tbody>
         </Table>
       </Col>
       <Col md='6'>
         <Table borderless>
-          <thead>
+          <tbody>
             <tr>
-              <td className='text-color'>
-                <i className='fas fa-flag mr-3 text-color'></i>COUNTRY OF
-                RESIDENCE:
+              <td className='text-uppercase text-color'>
+                <i className='fas fa-flag mr-3 text-color'></i>country of
+                residence:
               </td>
-              <td>{country}</td>
+              <td className='text-capitalize'>{country}</td>
             </tr>
             <tr>
-              <td className='text-color'>
-                <i className='fas fa-coins mr-3 text-color'></i>CURRENCY:
+              <td className='text-uppercase text-color'>
+                <i className='fas fa-coins mr-3 text-color'></i>currency:
               </td>
-              <td>{currency}</td>
+              <td className='text-capitalize'>{currency}</td>
             </tr>
             <tr>
-              <td className='text-color'>
-                <i className='fas fa-language mr-3 text-color'></i>LANGUAGE:
+              <td className='text-uppercase text-color'>
+                <i className='fas fa-language mr-3 text-color'></i>language:
               </td>
-              <td>{language}</td>
+              <td className='text-capitalize'>{language}</td>
             </tr>
             <tr>
-              <td className='text-color'>
-                <i className='fas fa-building mr-3 text-color'></i>
-                DEPARTMENT:
+              <td className='text-uppercase text-color'>
+                <i className='fas fa-building mr-3 text-color'></i>department:
               </td>
-              <td>{department}</td>
+              <td className='text-capitalize'>{department}</td>
             </tr>
             <tr>
-              <td className='text-color'>
-                <i className='fas fa-user-edit mr-3 text-color'></i>LINE
-                MANAGER:
+              <td className='text-uppercase text-color'>
+                <i className='fas fa-user-edit mr-3 text-color'></i>line
+                manager:
               </td>
-              <td>{linemanager}</td>
+              <td className='text-capitalize'>{linemanager}</td>
             </tr>
-          </thead>
+          </tbody>
         </Table>
       </Col>
     </Row>
   );
   return (
-    <div className='background clearfix mt-5 height'>
-      <h1 className='text-center text-color mb-5'>Profile Information</h1>
+    <Container className='background height text-color'>
+      <h3 className='text-center mb-2'>Profile Information</h3>
       {profileInfo}
       {!linemanager || !gender || !department ? (
         <a
@@ -160,7 +165,7 @@ const View = () => {
           <strong> UPDATE </strong>
         </a>
       )}
-    </div>
+    </Container>
   );
 };
 View.propTypes = {
