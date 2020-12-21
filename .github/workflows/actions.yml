@@ -22,7 +22,7 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn run build --if-present
       - run: yarn test
-        env:
+        env: 
           REACT_APP_BACKEND_URL: ${{ secrets.REACT_APP_BACKEND_URL }}
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v1.1.2

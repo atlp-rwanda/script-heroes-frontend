@@ -10,8 +10,14 @@ import Signup from "./Views/Signup";
 import ViewProfile from "./components/profile/View";
 import CompleteProfile from "./components/profile/Complete";
 import UpdateProfile from "./components/profile/Update";
+import {
+  ForgotPassword,
+  Success,
+} from "./components/resetPassword/forgotPassword";
+import ResetPassword from "./components/resetPassword/resetPassword";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+
 import Roles from "./views/Roles/Roles";
 
 import "./App.scss";
@@ -39,6 +45,9 @@ const App = () => (
           <Route exact path="/request/manager" component={AdminRequests} />
           <Route exact path="/profile/update/:slug" component={UpdateProfile} />
           <Route exact path="/roles" component={Roles} />
+          <Route exact path="/forgot/success" component={Success} />
+          <Route exact path="/forgot" component={ForgotPassword} />
+          <Route exact path="/reset/:token" component={ResetPassword} />
         </Switch>
       <Footer />
     </Router>
