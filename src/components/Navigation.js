@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const Navigation = () => {
   return (
-    <Container fluid>
+    <Container fluid className='nav-bar'>
       <Row className='navigation-title'>
         <Col>
           <h1 className='nav-title text-warning'>barefoot NOMAD</h1>

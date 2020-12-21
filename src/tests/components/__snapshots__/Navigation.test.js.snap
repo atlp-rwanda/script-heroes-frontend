@@ -2,6 +2,7 @@
 
 exports[`Footer Should match snapshot 1`] = `
 <Container
+  className="nav-bar"
   fluid={true}
   tag="div"
 >

@@ -5,7 +5,7 @@ exports[`App snapshot renders 1`] = `
   className="app"
 >
   <div
-    className="container-fluid"
+    className="nav-bar container-fluid"
   >
     <div
       className="navigation-title row"
