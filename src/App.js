@@ -24,31 +24,40 @@ import "./App.scss";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import Trip from "./components/requests/single/index";
+import Trips from "./components/requests/all/index";
 library.add(fab, faTrashAlt, faEdit);
-import AdminRequests from './components/requests/adminRequests/AdminRequests'
+import AdminRequests from "./components/requests/adminRequests/AdminRequests";
 
 const App = () => (
   <div className="app">
     <Router>
       <Navigation />
+      <Container>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Signup} />
+
           <Route exact path="/profile" component={ViewProfile} />
           <Route
             exact
             path="/profile/complete/:slug"
             component={CompleteProfile}
           />
-          <Route exact path="/request/manager" component={AdminRequests} />
+
           <Route exact path="/profile/update/:slug" component={UpdateProfile} />
           <Route exact path="/roles" component={Roles} />
           <Route exact path="/forgot/success" component={Success} />
           <Route exact path="/forgot" component={ForgotPassword} />
           <Route exact path="/reset/:token" component={ResetPassword} />
         </Switch>
+      </Container>
+      <Switch>
+        <Route exact path="/requests" component={Trips} />
+        <Route exact path="/requests/:id" component={Trip} />
+        <Route exact path="/request/manager" component={AdminRequests} />
+      </Switch>
       <Footer />
     </Router>
   </div>
