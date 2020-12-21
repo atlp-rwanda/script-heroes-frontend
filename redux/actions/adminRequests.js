@@ -1,13 +1,13 @@
 import http from "../../src/utils/axios";
-import { GET_REQUESTS, GET_REQUESTS_ERROR} from "./types";
+import { GET_REQUESTS, GET_REQUESTS_ERROR } from "./types";
 
-export const adminRequests = () => async(dispatch) => {
+export const adminRequests = () => async (dispatch) => {
   try {
-    const res = await http.get(`/api/request/manager`);
-    //console.log("The response is:",res.data)
-    dispatch({ 
-      type: GET_REQUESTS, 
-      payload: res.data 
+    const res = await http.get(`/api/request/manager`, {});
+    console.log("The response is:", res.data);
+    dispatch({
+      type: GET_REQUESTS,
+      payload: res.data,
     });
   } catch (error) {
     if (error.response.data.error) {

@@ -11,6 +11,7 @@ import alerts from "./alerts";
 import adminRequests from './adminRequests'
 import forgot from './forgotPassword';
 import resetPassword from './resetPassword'
+import decision from "./decision";
 
 // function that contains all reducer objects.
 const allReducers = combineReducers({
@@ -26,7 +27,8 @@ const allReducers = combineReducers({
   signup,
   adminRequests,
   forgot,
-  resetPassword
+  resetPassword,
+  requestDecision: decision,
 });
 
 export default allReducers;
