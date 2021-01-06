@@ -3,8 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import SignupForm from '../../components/SignupForm';
 import SignupImage from '../../components/SignupImage';
 import { signupAction, errorSetting } from '../../../redux/actions';
-import Navigation from '../../components/Navigation';
-import Footer from '../../components/Footer';
 
 const Signup = () => {
   const dispatch = useDispatch();

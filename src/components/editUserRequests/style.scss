@@ -1,0 +1,16 @@
+@use '../../variables.scss';
+.background-new {
+  background: variables.$navFooterColor;
+  border-radius: 0.2rem;
+}
+.btn-color {
+  background: variables.$navFooterColor;
+  border: 0;
+}
+.btn-color:hover {
+  background: variables.$navFooterColor;
+  border: 0;
+}
+.text-color-new {
+  color: variables.$mainTextColor;
+}

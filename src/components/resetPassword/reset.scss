@@ -1,133 +1,131 @@
 /* forgot password form */
-.forgotPassword{
+.forgotPassword {
   min-height: 69vh;
   position: relative;
   margin: 30px;
   top: 100px;
 }
-#forgotForm{
-    min-height: 300px;
-    border: 3px solid #E9ECEF;
-    border-radius: 10px;
-    background-color: #E9ECEF;
-    padding: 20px;
-  }
-  #forgotForm h1{
-    color:  #728191;
-    text-align: center;
-    text-decoration: underline;
-    font-family:  sans-serif;
-    font-weight: bold;
-  }
-  .forgotContainer Label{
+#forgotForm {
+  min-height: 300px;
+  border: 3px solid #e9ecef;
+  border-radius: 10px;
+  background-color: #e9ecef;
+  padding: 20px;
+}
+#forgotForm h1 {
+  color: #728191;
+  text-align: center;
+  text-decoration: underline;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.forgotContainer Label {
   margin-top: 20px;
-  }
-  .forgotContainer input{
-    margin-top: 20px;
-  }
-  .forgotContainer button{
-    margin: 30px;
-    // background-color: #544E45;
-    color: white;
-    text-align: center;
-  }
-  .forgotPassword img{
-    max-width: 600px;
-    max-height: 300px;
-    margin: 20px;
-  }
-  #response{
-    margin-top: 8px;
-    color: #f0b106;
-  }
-  .success{
-    min-height: 72vh;
-  }
-  #successForm{
-    background-color: #E9ECEF;
-    position: relative;
-    top: 200px;
-    min-height: 200px;
-  }
-  #successForm h1{
-    position: relative;
-    top: 25px;
-  }
+}
+.forgotContainer input {
+  margin-top: 20px;
+}
+.forgotContainer button {
+  margin: 30px;
+  // background-color: #544E45;
+  color: white;
+  text-align: center;
+}
+.forgotPassword img {
+  max-width: 600px;
+  max-height: 300px;
+  margin: 20px;
+}
+#response {
+  margin-top: 8px;
+  color: #f0b106;
+}
+.success {
+  min-height: 72vh;
+}
+#successForm {
+  background-color: #e9ecef;
+  position: relative;
+  top: 200px;
+  min-height: 200px;
+}
+#successForm h1 {
+  position: relative;
+  top: 25px;
+}
 
-  
-  /* reset password form */
+/* reset password form */
 
-  .resetPassword{
+.resetPassword {
+  position: relative;
+  top: 100px;
+  min-height: 72vh;
+}
+#resetForm {
+  min-height: 360px;
+  max-width: 700px;
+  border: 10px solid #e9ecef;
+  border-radius: 10px;
+  background-color: #e9ecef;
+}
+#resetForm h1 {
+  margin: 10px;
+  color: #728191;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+.resetImg {
+  max-width: 600px;
+  max-height: 500px;
+}
+#resetBtn {
+  margin: 10px;
+}
+.passwordInput {
+  position: relative;
+  display: flex;
+}
+.resetPassword i {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+.resetPassword i:hover {
+  color: rgb(236, 185, 16);
+  cursor: pointer;
+}
+
+@media (max-width: 470px) {
+  .forgotPassword {
     position: relative;
-    top: 100px;
-    min-height: 72vh;
+    top: 10px;
   }
-  #resetForm{
-    min-height: 360px;
-    max-width: 700px;
-    border: 10px solid #E9ECEF;
-    border-radius: 10px;
-    background-color: #E9ECEF;
+  #forgotForm h1 {
+    font-size: 18px;
   }
-  #resetForm h1{
-    margin: 10px;
-    color: #728191;
-    text-decoration: underline;
-    font-weight: bolder;
+  .forgotPassword img {
+    max-width: 300px;
+    max-height: 200px;
   }
-  .resetImg{
-    max-width: 600px;
-    max-height: 500px;
+  .forgotContainer input::placeholder {
+    font-size: 16px;
   }
-  #resetBtn{
-    margin:10px;
-  }
-  .passwordInput{
+}
+
+@media (max-width: 470px) {
+  .resetPassword {
     position: relative;
-    display: flex;
+    top: 50px;
   }
-  i {
-    position: absolute;
-    top: 20%;
-    right: 5%;
+  .resetImg {
+    max-width: 400px;
+    max-height: 400px;
+    margin-bottom: 50px;
   }
-  i:hover {
-    color: rgb(236, 185, 16);
-    cursor: pointer;
+  #resetForm h1 {
+    font-size: 28px;
   }
-
-  @media(max-width:470px){
-    .forgotPassword{
-      position: relative;
-      top: 10px;
-    }
-    #forgotForm h1{
-      font-size: 18px;
-    }
-    .forgotPassword img{
-      max-width: 300px;
-      max-height: 200px;
-    }
-    .forgotContainer input::placeholder{
-      font-size: 16px;
-    }
+  #resetForm Input::placeholder {
+    font-size: 16px;
   }
-
-  @media(max-width:470px){
-    .resetPassword{
-      position: relative;
-      top: 50px;
-    }
-    .resetImg{
-      max-width: 400px;
-      max-height: 400px;
-      margin-bottom: 50px;
-    }
-    #resetForm h1{
-      font-size: 28px;
-    }
-    #resetForm Input::placeholder{
-      font-size: 16px;
-    }
-  }
-  
+}
