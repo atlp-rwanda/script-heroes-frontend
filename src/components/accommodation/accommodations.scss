@@ -1,0 +1,66 @@
+@use '../../variables.scss';
+.accommodationForm {
+  background-color: #728191;
+}
+.accommodation-input-form {
+  max-width: 60%;
+}
+
+.content {
+  margin-bottom: 5vh;
+  margin-top: 1px;
+}
+.manage {
+  padding: 3px;
+  margin: 3px;
+}
+.btn-submit {
+  margin-bottom: 10px;
+  width: 100px;
+}
+.get-all-accommodations {
+  margin-bottom: 5px;
+}
+h4 {
+  text-align: center;
+  margin: auto;
+}
+.left-nav-bar {
+  height: 75vh;
+  margin-right: 1px;
+  background-color: #728191;
+}
+.seach-form {
+  margin-top: 3vh;
+}
+.align-left {
+  float: left;
+}
+.input {
+  border-radius: 6px;
+  padding: 0;
+  margin: 0;
+}
+.search-input {
+  background-color: variables.$navFooterColor;
+  border: 0;
+  border-bottom: 2px solid variables.$mainTextColor;
+  outline: none;
+  color: variables.$mainBgColor;
+  font-size: 0.9em;
+  padding-left: 5px;
+  padding-bottom: -10px;
+  height: 2.5em;
+  font-family: FontAwesome;
+}
+::placeholder {
+  color: variables.$mainTextColor;
+  text-align: end;
+  font-size: 1.5em;
+}
+.btn-delete {
+  color: red;
+}
+.btn-update {
+  color: blue;
+}

@@ -94,7 +94,6 @@ const Login = ({ error, response, loading, loginAuthAction, errorSetting }) => {
                   type="email"
                   name="email"
                   id="exampleEmail"
-                  placeholder="example@email.com"
                   value={user.email}
                   onChange={handleChange}
                   required
@@ -108,7 +107,6 @@ const Login = ({ error, response, loading, loginAuthAction, errorSetting }) => {
                   type="password"
                   name="password"
                   id="password"
-                  placeholder="Password"
                   value={user.password}
                   onChange={handleChange}
                   required
