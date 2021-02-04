@@ -8,6 +8,8 @@ import Home from "./components/HomePage";
 import Login from "./views/login";
 import Signup from "./Views/Signup";
 import ViewProfile from "./components/profile/View";
+
+import { AccommodationPages, EditAccomodation } from "./Views/accommodation";
 import CompleteProfile from "./components/profile/Complete";
 import UpdateProfile from "./components/profile/Update";
 import {
@@ -26,29 +28,31 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 library.add(fab, faTrashAlt, faEdit);
-import AdminRequests from './components/requests/adminRequests/AdminRequests'
+import AdminRequests from "./components/requests/adminRequests/AdminRequests";
 
 const App = () => (
   <div className="app">
     <Router>
       <Navigation />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/signup" component={Signup} />
-          <Route exact path="/profile" component={ViewProfile} />
-          <Route
-            exact
-            path="/profile/complete/:slug"
-            component={CompleteProfile}
-          />
-          <Route exact path="/request/manager" component={AdminRequests} />
-          <Route exact path="/profile/update/:slug" component={UpdateProfile} />
-          <Route exact path="/roles" component={Roles} />
-          <Route exact path="/forgot/success" component={Success} />
-          <Route exact path="/forgot" component={ForgotPassword} />
-          <Route exact path="/reset/:token" component={ResetPassword} />
-        </Switch>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={Signup} />
+        <Route exact path="/profile" component={ViewProfile} />
+        <Route exact path="/accommodation" component={AccommodationPages} />
+        <Route exact path="/accommodation/view" component={EditAccomodation} />
+        <Route
+          exact
+          path="/profile/complete/:slug"
+          component={CompleteProfile}
+        />
+        <Route exact path="/request/manager" component={AdminRequests} />
+        <Route exact path="/profile/update/:slug" component={UpdateProfile} />
+        <Route exact path="/roles" component={Roles} />
+        <Route exact path="/forgot/success" component={Success} />
+        <Route exact path="/forgot" component={ForgotPassword} />
+        <Route exact path="/reset/:token" component={ResetPassword} />
+      </Switch>
       <Footer />
     </Router>
   </div>
