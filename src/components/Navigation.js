@@ -14,6 +14,7 @@ import {
 const Navigation = () => {
   const token = localStorage.getItem("x-auth-token");
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownRequestOpen, setDropdownRequestOpen] = useState(false);
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -25,6 +26,7 @@ const Navigation = () => {
   }, []);
 
   const toggle = () => setDropdownOpen((prevState) => !prevState);
+  const requestToggle = () => setDropdownRequestOpen((prevState) => !prevState);
   return (
     <Container fluid className="nav-bar">
       <Row className="navigation-title">
@@ -121,9 +123,33 @@ const Navigation = () => {
             )}
 
             <li className="nav-item">
-              <Link className="nav-link text-warning ml-4" to="/">
-                Contact
-              </Link>
+              <Dropdown
+                className="accomodation-dropdown"
+                isOpen={dropdownRequestOpen}
+                toggle={requestToggle}
+              >
+                <DropdownToggle className="dropdown-togle" caret>
+                  Request
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem className="dropdown-item">
+                    <Link
+                      className="nav-link text-warning ml-4"
+                      to="/trip-request"
+                    >
+                      Trip&nbsp; Request
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link
+                      className="nav-link text-warning ml-4"
+                      to="/edit-travel-request"
+                    >
+                      Manage&nbsp; Request
+                    </Link>
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
             </li>
             <li className="nav-item">
               <Link className="nav-link text-warning ml-4" to="/profile">

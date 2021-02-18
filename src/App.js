@@ -21,6 +21,8 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
 import Roles from "./views/Roles/Roles";
+import CreateTravelRequest from "./Views/travelRequest";
+import EditTravelRequestComponent from "./Views/editTravelRequest";
 
 import "./App.scss";
 import "jquery/dist/jquery.min.js";
@@ -39,8 +41,14 @@ const App = () => (
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/profile" component={ViewProfile} />
+        <Route exact path="/trip-request" component={CreateTravelRequest} />
         <Route exact path="/accommodation" component={AccommodationPages} />
         <Route exact path="/accommodation/view" component={EditAccomodation} />
+        <Route
+          exact
+          path="/edit-travel-request"
+          component={EditTravelRequestComponent}
+        />
         <Route
           exact
           path="/profile/complete/:slug"
