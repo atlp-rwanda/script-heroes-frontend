@@ -146,13 +146,58 @@ exports[`App snapshot renders 1`] = `
           <li
             className="nav-item"
           >
-            <a
-              className="nav-link text-warning ml-4"
-              href="/"
-              onClick={[Function]}
+            <div
+              className="accomodation-dropdown dropdown"
+              onKeyDown={[Function]}
             >
-              Contact
-            </a>
+              <button
+                aria-expanded={false}
+                aria-haspopup={true}
+                aria-label={null}
+                className="dropdown-togle dropdown-toggle btn btn-secondary"
+                onClick={[Function]}
+                type="button"
+              >
+                Request
+              </button>
+              <div
+                aria-hidden={true}
+                className="dropdown-menu dropdown-menu-right"
+                role="menu"
+                tabIndex="-1"
+              >
+                <button
+                  className="dropdown-item dropdown-item"
+                  onClick={[Function]}
+                  role="menuitem"
+                  tabIndex="0"
+                  type="button"
+                >
+                  <a
+                    className="nav-link text-warning ml-4"
+                    href="/trip-request"
+                    onClick={[Function]}
+                  >
+                    Trip  Request
+                  </a>
+                </button>
+                <button
+                  className="dropdown-item"
+                  onClick={[Function]}
+                  role="menuitem"
+                  tabIndex="0"
+                  type="button"
+                >
+                  <a
+                    className="nav-link text-warning ml-4"
+                    href="/edit-travel-request"
+                    onClick={[Function]}
+                  >
+                    Manage  Request
+                  </a>
+                </button>
+              </div>
+            </div>
           </li>
           <li
             className="nav-item"

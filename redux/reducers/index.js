@@ -7,6 +7,7 @@ import linemanager from "./profile/linemanager";
 import roles from "./roles";
 import users from "./users";
 import locations from "./locations";
+import tripRequest from "./tripRequest";
 import accommodation from "./accomodations";
 import statuses from "./statuses";
 import alerts from "./alerts";
@@ -30,6 +31,7 @@ const allReducers = combineReducers({
   signup,
   adminRequests,
   forgot,
+  tripRequest,
   resetPassword,
 });
 
