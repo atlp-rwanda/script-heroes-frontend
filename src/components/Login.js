@@ -15,6 +15,8 @@ import {
 import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.css";
 import loginImage from "../../src/assets/img/loginImage.png";
+import FBLogin from "../../src/assets/img/fb_logo.jpg";
+import GoogleLogin from "../../src/assets/img/google_logo.png";
 
 import "./Login.scss";
 
@@ -134,8 +136,25 @@ const Login = ({ error, response, loading, loginAuthAction, errorSetting }) => {
 
             <center>
               <div className="form_part">
-                <button>Sign in With Facebook</button>
-                <button>Sign in With Google</button>
+                <a href={process.env.FB_CALLBACK_URL} className="social_link">
+                  <img
+                    src={FBLogin}
+                    alt="Login with Facebook"
+                    className="social_login"
+                  />
+                  Sign in With Facebook
+                </a>
+                <a
+                  href={process.env.GOOGLE_CALLBACK_URL}
+                  className="social_link"
+                >
+                  <img
+                    src={GoogleLogin}
+                    alt="Login with Google"
+                    className="social_login"
+                  />
+                  Sign in With Google
+                </a>
               </div>
             </center>
             <Col md={10}>
