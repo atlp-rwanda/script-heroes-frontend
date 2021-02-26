@@ -1,34 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
-import {
-  Container,
-  Row,
-  Col,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 const Navigation = () => {
-  const token = localStorage.getItem("x-auth-token");
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [dropdownRequestOpen, setDropdownRequestOpen] = useState(false);
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    if (token !== null || token !== undefined) {
-      setShowButton(true);
-    } else {
-      setShowButton(false);
-    }
-  }, []);
-
-  const toggle = () => setDropdownOpen((prevState) => !prevState);
-  const requestToggle = () => setDropdownRequestOpen((prevState) => !prevState);
   return (
-    <Container fluid className="nav-bar">
+    <Container fluid>
       <Row className="navigation-title">
         <Col>
           <h1 className="nav-title text-warning">barefoot NOMAD</h1>
@@ -89,71 +66,19 @@ const Navigation = () => {
                 Services
               </Link>
             </li>
-
-            {showButton && (
-              <li className="nav-item">
-                <Dropdown
-                  className="accomodation-dropdown"
-                  isOpen={dropdownOpen}
-                  toggle={toggle}
-                >
-                  <DropdownToggle className="dropdown-togle" caret>
-                    Accommodation
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem className="dropdown-item">
-                      <Link
-                        className="nav-link text-warning ml-4"
-                        to="/accommodation"
-                      >
-                        Add&nbsp; Accommodation
-                      </Link>
-                    </DropdownItem>
-                    <DropdownItem>
-                      <Link
-                        className="nav-link text-warning ml-4"
-                        to="/accommodation/view"
-                      >
-                        View&nbsp; Accommodation
-                      </Link>
-                    </DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
-              </li>
-            )}
-
             <li className="nav-item">
-              <Dropdown
-                className="accomodation-dropdown"
-                isOpen={dropdownRequestOpen}
-                toggle={requestToggle}
-              >
-                <DropdownToggle className="dropdown-togle" caret>
-                  Request
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem className="dropdown-item">
-                    <Link
-                      className="nav-link text-warning ml-4"
-                      to="/trip-request"
-                    >
-                      Trip&nbsp; Request
-                    </Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link
-                      className="nav-link text-warning ml-4"
-                      to="/edit-travel-request"
-                    >
-                      Manage&nbsp; Request
-                    </Link>
-                  </DropdownItem>
-                </DropdownMenu>
-              </Dropdown>
+              <Link className="nav-link text-warning ml-4" to="/">
+                Contact
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link text-warning ml-4" to="/profile">
                 Profile
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-warning ml-4" to="/chat">
+                Chat
               </Link>
             </li>
             <li className="nav-item">

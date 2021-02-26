@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Container } from "reactstrap";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faTrashAlt, faEdit } from "@fortawesome/free-solid-svg-icons";
 import Home from "./components/HomePage";
 import Login from "./views/login";
 import Signup from "./Views/Signup";
+import Chat from "./components/Chats";
 import ViewProfile from "./components/profile/View";
 
 import { AccommodationPages, EditAccomodation } from "./Views/accommodation";
@@ -49,6 +49,7 @@ const App = () => (
           path="/edit-travel-request"
           component={EditTravelRequestComponent}
         />
+        <Route exact path="/chat" component={Chat} />
         <Route
           exact
           path="/profile/complete/:slug"

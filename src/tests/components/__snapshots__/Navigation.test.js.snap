@@ -2,7 +2,6 @@
 
 exports[`Footer Should match snapshot 1`] = `
 <Container
-  className="nav-bar"
   fluid={true}
   tag="div"
 >
@@ -167,56 +166,12 @@ exports[`Footer Should match snapshot 1`] = `
         <li
           className="nav-item"
         >
-          <Dropdown
-            a11y={true}
-            active={false}
-            addonType={false}
-            className="accomodation-dropdown"
-            direction="down"
-            inNavbar={false}
-            isOpen={false}
-            nav={false}
-            setActiveFromChild={false}
-            toggle={[Function]}
+          <Link
+            className="nav-link text-warning ml-4"
+            to="/"
           >
-            <DropdownToggle
-              aria-haspopup={true}
-              caret={true}
-              className="dropdown-togle"
-              color="secondary"
-            >
-              Request
-            </DropdownToggle>
-            <DropdownMenu
-              flip={true}
-              right={true}
-              tag="div"
-            >
-              <DropdownItem
-                className="dropdown-item"
-                tag="button"
-                toggle={true}
-              >
-                <Link
-                  className="nav-link text-warning ml-4"
-                  to="/trip-request"
-                >
-                  Trip  Request
-                </Link>
-              </DropdownItem>
-              <DropdownItem
-                tag="button"
-                toggle={true}
-              >
-                <Link
-                  className="nav-link text-warning ml-4"
-                  to="/edit-travel-request"
-                >
-                  Manage  Request
-                </Link>
-              </DropdownItem>
-            </DropdownMenu>
-          </Dropdown>
+            Contact
+          </Link>
         </li>
         <li
           className="nav-item"
@@ -226,6 +181,16 @@ exports[`Footer Should match snapshot 1`] = `
             to="/profile"
           >
             Profile
+          </Link>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <Link
+            className="nav-link text-warning ml-4"
+            to="/chat"
+          >
+            Chat
           </Link>
         </li>
         <li
