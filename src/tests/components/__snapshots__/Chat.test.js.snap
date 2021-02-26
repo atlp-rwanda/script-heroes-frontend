@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chat page Should match snapshot 1`] = `
+<div>
+  <BrowserRouter>
+    <Container
+      className="container-chat"
+      tag="div"
+    >
+      <Row
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+      >
+        <Col
+          md="6"
+          tag="div"
+          widths={
+            Array [
+              "xs",
+              "sm",
+              "md",
+              "lg",
+              "xl",
+            ]
+          }
+        >
+          <h2>
+            Chat
+          </h2>
+          <img
+            alt="Chat Image"
+            className="chat_image"
+            src="test-file-stub"
+          />
+        </Col>
+        <Col
+          className="chat"
+          tag="div"
+          widths={
+            Array [
+              "xs",
+              "sm",
+              "md",
+              "lg",
+              "xl",
+            ]
+          }
+        >
+          <div
+            className="messages"
+          />
+          <div
+            className="send"
+          >
+            <Input
+              autoComplete="off"
+              className="chat_field"
+              name="message"
+              onKeyDown={[Function]}
+              placeholder="Tape a message..."
+              required={true}
+              type="text"
+            />
+            <img
+              alt="Send Image"
+              className="send_image"
+              onClick={[Function]}
+              src="test-file-stub"
+            />
+          </div>
+        </Col>
+      </Row>
+    </Container>
+  </BrowserRouter>
+</div>
+`;

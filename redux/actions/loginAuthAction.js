@@ -1,11 +1,11 @@
-import http from "../../src/utils/axios";
+import axios from "axios";
 import { SET_RESPONSE, SET_LOADING, SET_ERROR } from "./types";
 
 const localStorage = window.localStorage;
 export const loginAction = (data) => async (dispatch) => {
   try {
     dispatch({ type: SET_LOADING });
-    const res = await http.post("/api/auth/login", data);
+    const res = await axios.post(process.env.REACT_APP_LOGIN, data);
     localStorage.setItem("x-auth-token", res.data.token);
     localStorage.setItem("isAuthenticated", true);
 
